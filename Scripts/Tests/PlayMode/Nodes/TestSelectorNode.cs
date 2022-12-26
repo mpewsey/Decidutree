@@ -20,6 +20,14 @@ namespace MPewsey.BehaviorTree
         }
 
         [Test]
+        public void TestGetBlackboard()
+        {
+            var node = Tree.AddChildNode<SelectorNode>("Selector Node");
+            Tree.Initialize();
+            Assert.AreEqual(Tree.Blackboard, node.Blackboard);
+        }
+
+        [Test]
         public void TestTickFailure()
         {
             var node = Tree.AddChildNode<SelectorNode>("Selector Node");

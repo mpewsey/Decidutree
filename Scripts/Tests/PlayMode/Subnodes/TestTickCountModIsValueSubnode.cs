@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MPewsey.BehaviorTree.Tests.PlayMode
 {
-    public class TestTickCountModIsValudSubnode
+    public class TestTickCountModIsValueSubnode
     {
         private BehaviorTree Tree { get; set; }
 
