@@ -1,0 +1,15 @@
+{
+    "name": "com.mpewsey.behaviortree",
+    "author": "Matt Pewsey",
+    "displayName": "Behavior Tree",
+    "version": "0.0.1",
+    "unity": "2021.2",
+    "keywords": [
+      "unity",
+      "ai"
+    ],
+    "description": "A component based behavior tree for Unity.",
+    "dependencies": { },
+    "samples": [ ],
+    "type": "library"
+  }
