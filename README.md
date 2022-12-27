@@ -22,12 +22,17 @@ https://github.com/mpewsey/BehaviorTree.git#v1.0.0
 
 The behavior tree in this library consists of component behavior nodes and behavior subnodes that are added to Game Objects in the Unity hierarchy view.
 
-To create a tree, create the root `BehaviorTree` component via `GameObject > Behavior Tree > Behavior Tree`.
+* To create a tree, create the root behavior tree component via `GameObject > Behavior Tree > Behavior Tree`.
+* Next, add behavior nodes as children of the tree (and children of those children, as the behavior requires) via the `GameObject > Behavior Tree` menu.
+* In addition, behavior subnode components may be attached to the nodes of the tree. The node will evaluate the attached subnodes like a Sequence node prior to performing its normal `OnTick` operation. Therefore, subnodes are usually best used as conditions that must be satisfied for a node to run.
+* Since the behavior tree is no different than any other Unity component, it may be saved as a prefab and instantiated accordingly.
+* To use the tree, you must first call the `Initialize` method on the tree. Then, evaluating the tree is only a matter of calling its `Tick` method. Depending on the tree, this may be something you choose to do every frame, such as through an Update method, or more infrequently, only when you need it, such as with turn-based battle AI.
 
-Next, add behavior nodes as children of the tree (and children of those children, as the behavior requires) via the `GameObject > Behavior Tree` menu.
+## Creating Custom Nodes
 
-In addition, behavior subnode components may be attached to the nodes of the tree. The node will evaluate the attached subnodes like a Sequence node prior to performing its normal `OnTick` operation. Therefore, subnodes are usually best used as conditions that must be satisfied for a node to run.
+The library provides some generic nodes. However, to capture any unique behavior you will need to create your own behavior nodes and subnodes.
 
-Since the behavior tree is no different than any other Unity component, it may be saved as a prefab and instantiated accordingly.
-
-To use the tree, you must first call the `Initialize` method. Then, evaluating the tree is only a matter of calling the `Tick` method. Depending on the tree, this may be something you do every frame, such as through an Update method, or more infrequently, only when you need it, such as with turn-based battle AI.
+* Custom behavior node components should inherit the `BehaviorNode` class and implement the required abstract methods.
+* Custom behavior subnode components should inherit the `BehaviorSubnode` class and implement the required abstract methods.
+* The nodes of a tree instance share a Blackboard, an object with entries for shared variables. In the node and subnode `OnInitialize` method, it is often useful to acquire the blackboard entries for the shared variables that will be used by the node and store them as properties on the component.
+* The `OnTick` method should implement any operations performed by the node. For subnodes, this may simply be evaluating a condition, then returning either Success or Failure.
