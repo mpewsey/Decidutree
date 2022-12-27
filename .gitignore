@@ -11,6 +11,7 @@
 /[Mm]emoryCaptures/
 /[Tt]ests/
 /[Uu]ser[Ss]ettings/
+/[Dd]ocs~/output/
 
 .DS_Store
 
