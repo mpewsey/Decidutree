@@ -1,5 +1,7 @@
 # Behavior Tree
 
+A component based behavior tree for Unity.
+
 ## Installation
 
 To add the package to a project, in Unity, select `Window > Package Manager`.
