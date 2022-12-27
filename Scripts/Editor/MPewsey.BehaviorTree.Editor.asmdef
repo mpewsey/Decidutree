@@ -1,0 +1,18 @@
+{
+    "name": "MPewsey.BehaviorTree.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0760161266623714bb68e382de5997d1"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
