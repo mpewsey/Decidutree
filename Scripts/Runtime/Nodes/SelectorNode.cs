@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Nodes
 {
     public class SelectorNode : BehaviorNode
     {

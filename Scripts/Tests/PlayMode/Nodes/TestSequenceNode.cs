@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Nodes.Tests.PlayMode
 {
     public class TestSequenceNode
     {

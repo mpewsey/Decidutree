@@ -1,7 +1,8 @@
+using MPewsey.BehaviorTree.Nodes;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Tests.PlayMode
+namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
 {
     public class TestTickCounterSubnode
     {
