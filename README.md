@@ -22,6 +22,8 @@ https://github.com/mpewsey/BehaviorTree.git#v1.0.0
 
 The behavior tree in this library consists of component behavior nodes and behavior subnodes that are added to Game Objects in the Unity hierarchy view.
 
+![Behavior Tree Heirarchy](https://user-images.githubusercontent.com/23442063/209605129-62bda02a-cdcb-4723-a429-d53fa3e4915c.png)
+
 * To create a tree, create the root behavior tree component via `GameObject > Behavior Tree > Behavior Tree`.
 * Next, add behavior nodes as children of the tree (and children of those children, as the behavior requires) via the `GameObject > Behavior Tree` menu.
 * In addition, behavior subnode components may be attached to the nodes of the tree. The node will evaluate the attached subnodes like a Sequence node prior to performing its normal `OnTick` operation. Therefore, subnodes are usually best used as conditions that must be satisfied for a node to run.
