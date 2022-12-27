@@ -26,7 +26,7 @@ The behavior tree in this library consists of component behavior nodes and behav
 * Next, add behavior nodes as children of the tree (and children of those children, as the behavior requires) via the `GameObject > Behavior Tree` menu.
 * In addition, behavior subnode components may be attached to the nodes of the tree. The node will evaluate the attached subnodes like a Sequence node prior to performing its normal `OnTick` operation. Therefore, subnodes are usually best used as conditions that must be satisfied for a node to run.
 * Since the behavior tree is no different than any other Unity component, it may be saved as a prefab and instantiated accordingly.
-* To use the tree, you must first call the `Initialize` method on the tree. Then, evaluating the tree is only a matter of calling its `Tick` method. Depending on the tree, this may be something you choose to do every frame, such as through an Update method, or more infrequently, only when you need it, such as with turn-based battle AI.
+* To use the tree, you must first call the `Initialize` method on the tree instance. Then, evaluating the tree is only a matter of calling its `Tick` method. Depending on the tree, this may be something you choose to do every frame, such as through an Update method, or more infrequently, only when you need it, such as with turn-based battle AI.
 
 ```TreeTicker.cs
 [RequireComponent(typeof(BehaviorTree))]
