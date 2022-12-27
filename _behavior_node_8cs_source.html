@@ -99,89 +99,93 @@ $(document).ready(function(){initNavTree('_behavior_node_8cs_source.html',''); i
   <div class="headertitle"><div class="title">BehaviorNode.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_m_pewsey_1_1_behavior_tree.html">MPewsey.BehaviorTree</a></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">BehaviorNode</a> : MonoBehaviour</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> Root { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">BehaviorNode</a> Parent { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">BehaviorNode</a>[] Children { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_subnode.html">BehaviorSubnode</a>[] Subnodes { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a> =&gt; Root.Blackboard;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> OnInitialize();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">protected</span> <span class="keyword">abstract</span> BehaviorStatus OnTick();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">protected</span> <span class="keywordtype">void</span> Initialize(<a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> root, <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">BehaviorNode</a> parent)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            Root = root;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            Parent = parent;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            Subnodes = GetComponents&lt;BehaviorSubnode&gt;();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            Children = GetChildComponents&lt;BehaviorNode&gt;(transform);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            OnInitialize();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Subnodes)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                node.Initialize(root, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Children)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                node.Initialize(root, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">public</span> BehaviorStatus Tick()</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Subnodes)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                var status = node.Tick();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span> (status != BehaviorStatus.Success)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordflow">return</span> status;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">return</span> OnTick();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">public</span> T AddChildNode&lt;T&gt;(<span class="keywordtype">string</span> name) where T : <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">BehaviorNode</a></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            var obj = <span class="keyword">new</span> GameObject(name);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            obj.transform.SetParent(transform);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> obj.AddComponent&lt;T&gt;();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">public</span> T AddSubnode&lt;T&gt;() where T : <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_subnode.html">BehaviorSubnode</a></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">return</span> gameObject.AddComponent&lt;T&gt;();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">public</span> <span class="keyword">static</span> T[] GetChildComponents&lt;T&gt;(Transform parent)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (parent == <span class="keyword">null</span> || parent.childCount == 0)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">return</span> System.Array.Empty&lt;T&gt;();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            var count = 0;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            var components = <span class="keyword">new</span> T[parent.childCount];</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; parent.childCount; i++)</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">if</span> (parent.GetChild(i).TryGetComponent(out T component))</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    components[count++] = component;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            System.Array.Resize(ref components, count);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> components;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_behavior_node_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_node.html">MPewsey.BehaviorTree.BehaviorNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_node_8cs_source.html#l00005">BehaviorNode.cs:6</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_behavior_subnode_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_subnode.html">MPewsey.BehaviorTree.BehaviorSubnode</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_subnode_8cs_source.html#l00006">BehaviorSubnode.cs:7</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_behavior_tree_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">MPewsey.BehaviorTree.BehaviorTree</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_8cs_source.html#l00003">BehaviorTree.cs:4</a></div></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_m_pewsey.html">MPewsey</a>.<a class="code hl_namespace" href="namespace_m_pewsey_1_1_behavior_tree.html">BehaviorTree</a>.<a class="code hl_namespace" href="namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes.html">Subnodes</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html">MPewsey.BehaviorTree.Nodes</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a> : MonoBehaviour</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> Root { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a> Parent { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a>[] Children { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html">BehaviorSubnode</a>[] Subnodes { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a> <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a> =&gt; Root.Blackboard;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> OnInitialize();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">protected</span> <span class="keyword">abstract</span> BehaviorStatus OnTick();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">protected</span> <span class="keywordtype">void</span> Initialize(<a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> root, <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a> parent)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            Root = root;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            Parent = parent;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            Subnodes = GetComponents&lt;BehaviorSubnode&gt;();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            Children = GetChildComponents&lt;BehaviorNode&gt;(transform);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            OnInitialize();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Subnodes)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                node.Initialize(root, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Children)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                node.Initialize(root, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">public</span> BehaviorStatus Tick()</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">foreach</span> (var node <span class="keywordflow">in</span> Subnodes)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                var status = node.Tick();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">if</span> (status != BehaviorStatus.Success)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">return</span> status;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">return</span> OnTick();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">public</span> T AddChildNode&lt;T&gt;(<span class="keywordtype">string</span> name) where T : <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            var obj = <span class="keyword">new</span> GameObject(name);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            obj.transform.SetParent(transform);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">return</span> obj.AddComponent&lt;T&gt;();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">public</span> T AddSubnode&lt;T&gt;() where T : <a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html">BehaviorSubnode</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> gameObject.AddComponent&lt;T&gt;();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">public</span> <span class="keyword">static</span> T[] GetChildComponents&lt;T&gt;(Transform parent)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (parent == <span class="keyword">null</span> || parent.childCount == 0)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">return</span> System.Array.Empty&lt;T&gt;();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            var count = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            var components = <span class="keyword">new</span> T[parent.childCount];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; parent.childCount; i++)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">if</span> (parent.GetChild(i).TryGetComponent(out T component))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    components[count++] = component;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            System.Array.Resize(ref components, count);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> components;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_behavior_tree_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">MPewsey.BehaviorTree.BehaviorTree</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_8cs_source.html#l00005">BehaviorTree.cs:6</a></div></div>
 <div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_blackboard_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">MPewsey.BehaviorTree.Blackboard</a></div><div class="ttdef"><b>Definition:</b> <a href="_blackboard_8cs_source.html#l00005">Blackboard.cs:6</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">MPewsey.BehaviorTree.Nodes.BehaviorNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_node_8cs_source.html#l00006">BehaviorNode.cs:7</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html">MPewsey.BehaviorTree.Subnodes.BehaviorSubnode</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_subnode_8cs_source.html#l00007">BehaviorSubnode.cs:8</a></div></div>
+<div class="ttc" id="anamespace_m_pewsey_1_1_behavior_tree_1_1_nodes_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html">MPewsey.BehaviorTree.Nodes</a></div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_editor_8cs_source.html#l00004">SelectorNodeEditor.cs:5</a></div></div>
+<div class="ttc" id="anamespace_m_pewsey_1_1_behavior_tree_1_1_subnodes_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes.html">MPewsey.BehaviorTree.Subnodes</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_subnode_8cs_source.html#l00004">BehaviorSubnode.cs:5</a></div></div>
 <div class="ttc" id="anamespace_m_pewsey_1_1_behavior_tree_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_behavior_tree.html">MPewsey.BehaviorTree</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_editor_8cs_source.html#l00004">BehaviorTreeEditor.cs:5</a></div></div>
+<div class="ttc" id="anamespace_m_pewsey_html"><div class="ttname"><a href="namespace_m_pewsey.html">MPewsey</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_editor_8cs_source.html#l00004">BehaviorTreeEditor.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
