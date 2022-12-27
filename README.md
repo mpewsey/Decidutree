@@ -28,6 +28,27 @@ The behavior tree in this library consists of component behavior nodes and behav
 * Since the behavior tree is no different than any other Unity component, it may be saved as a prefab and instantiated accordingly.
 * To use the tree, you must first call the `Initialize` method on the tree. Then, evaluating the tree is only a matter of calling its `Tick` method. Depending on the tree, this may be something you choose to do every frame, such as through an Update method, or more infrequently, only when you need it, such as with turn-based battle AI.
 
+```TreeTicker.cs
+[RequireComponent(typeof(BehaviorTree))]
+public class TreeTicker : MonoBehaviour
+{
+    public BehaviorTree Tree { get; private set; }
+    
+    // Get the behavior tree component and initialize it.
+    private void Awake()
+    {
+        Tree = GetComponent<BehaviorTree>();
+        Tree.Initialize();
+    }
+    
+    // Assuming the tree is AI to be evaluated every frame, tick it in Update.
+    private void Update()
+    {
+        Tree.Tick();
+    }
+}
+```
+
 ## Creating Custom Behavior
 
 The library provides some generic nodes. However, to capture any unique behavior you will need to create your own behavior nodes and subnodes.
