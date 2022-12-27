@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Subnodes
 {
     public class TickCountModIsValueSubnode : BehaviorSubnode
     {

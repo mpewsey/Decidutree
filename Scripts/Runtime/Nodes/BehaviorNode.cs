@@ -1,6 +1,7 @@
+using MPewsey.BehaviorTree.Subnodes;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Nodes
 {
     public abstract class BehaviorNode : MonoBehaviour
     {

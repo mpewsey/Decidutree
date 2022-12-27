@@ -1,3 +1,5 @@
+using MPewsey.BehaviorTree.Nodes;
+using MPewsey.BehaviorTree.Subnodes;
 using NUnit.Framework;
 using UnityEngine;
 

@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Subnodes
 {
     public class TickCountIsEvenSubnode : BehaviorSubnode
     {

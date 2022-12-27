@@ -1,6 +1,7 @@
+using MPewsey.BehaviorTree.Nodes;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.BehaviorTree.Subnodes
 {
     [RequireComponent(typeof(BehaviorNode))]
     public abstract class BehaviorSubnode : MonoBehaviour
