@@ -105,60 +105,74 @@ $(document).ready(function(){initNavTree('class_m_pewsey_1_1_behavior_tree_1_1_n
   <div class="headertitle"><div class="title">MPewsey.BehaviorTree.Nodes.BehaviorNode Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The base class for all behavior nodes.  
+ <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for MPewsey.BehaviorTree.Nodes.BehaviorNode:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.png" usemap="#MPewsey.BehaviorTree.Nodes.BehaviorNode_map" alt=""/>
   <map id="MPewsey.BehaviorTree.Nodes.BehaviorNode_map" name="MPewsey.BehaviorTree.Nodes.BehaviorNode_map">
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html" alt="MPewsey.BehaviorTree.Nodes.SelectorNode" shape="rect" coords="0,112,278,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html" alt="MPewsey.BehaviorTree.Nodes.SequenceNode" shape="rect" coords="288,112,566,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_status_node.html" alt="MPewsey.BehaviorTree.Nodes.StatusNode" shape="rect" coords="576,112,854,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html" alt="MPewsey.BehaviorTree.BehaviorTree" shape="rect" coords="0,168,278,192"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html" title="Ticks the node&#39;s children until the first Success or Running node is found." alt="MPewsey.BehaviorTree.Nodes.SelectorNode" shape="rect" coords="0,112,278,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html" title="Ticks the node&#39;s children until the first Failure or Running node is found." alt="MPewsey.BehaviorTree.Nodes.SequenceNode" shape="rect" coords="288,112,566,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_status_node.html" title="A behavior node that returns a specified status." alt="MPewsey.BehaviorTree.Nodes.StatusNode" shape="rect" coords="576,112,854,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html" title="A behavior tree component." alt="MPewsey.BehaviorTree.BehaviorTree" shape="rect" coords="0,168,278,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a846f9e94897ebc6bc6bf876c398088d1"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a846f9e94897ebc6bc6bf876c398088d1">AddChildNode&lt; T &gt;</a> (string name)</td></tr>
+<tr class="memdesc:a846f9e94897ebc6bc6bf876c398088d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child to the node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a846f9e94897ebc6bc6bf876c398088d1">More...</a><br /></td></tr>
 <tr class="separator:a846f9e94897ebc6bc6bf876c398088d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1ad25ac3a0c05c9cc128db21bf734b"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a3e1ad25ac3a0c05c9cc128db21bf734b">AddSubnode&lt; T &gt;</a> ()</td></tr>
+<tr class="memdesc:a3e1ad25ac3a0c05c9cc128db21bf734b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a subnode to the node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a3e1ad25ac3a0c05c9cc128db21bf734b">More...</a><br /></td></tr>
 <tr class="separator:a3e1ad25ac3a0c05c9cc128db21bf734b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48dc179d3ef438f96e69104f591d536b"><td class="memItemLeft" align="right" valign="top">BehaviorStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a48dc179d3ef438f96e69104f591d536b">Tick</a> ()</td></tr>
+<tr class="memitem:a48dc179d3ef438f96e69104f591d536b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a48dc179d3ef438f96e69104f591d536b">Tick</a> ()</td></tr>
+<tr class="memdesc:a48dc179d3ef438f96e69104f591d536b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks all subnodes in a sequence, then calls the nodes OnTick methods if they are all satisfied.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a48dc179d3ef438f96e69104f591d536b">More...</a><br /></td></tr>
 <tr class="separator:a48dc179d3ef438f96e69104f591d536b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c2d2a3155d21b36ad75966ee50bfed8"><td class="memItemLeft" align="right" valign="top">static T[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a8c2d2a3155d21b36ad75966ee50bfed8">GetChildComponents&lt; T &gt;</a> (Transform parent)</td></tr>
+<tr class="memdesc:a8c2d2a3155d21b36ad75966ee50bfed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of components on the immediate children of the specified transform.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a8c2d2a3155d21b36ad75966ee50bfed8">More...</a><br /></td></tr>
 <tr class="separator:a8c2d2a3155d21b36ad75966ee50bfed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab2718f13648e730b8ff1c1b4af598453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab2718f13648e730b8ff1c1b4af598453">Initialize</a> (<a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> root, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a> parent)</td></tr>
+<tr class="memdesc:ab2718f13648e730b8ff1c1b4af598453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the node and its child nodes and subnodes.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab2718f13648e730b8ff1c1b4af598453">More...</a><br /></td></tr>
 <tr class="separator:ab2718f13648e730b8ff1c1b4af598453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b1b805b9360bbba6dc798379a72f0d"><td class="memItemLeft" align="right" valign="top"><a id="a05b1b805b9360bbba6dc798379a72f0d" name="a05b1b805b9360bbba6dc798379a72f0d"></a>
-abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInitialize</b> ()</td></tr>
+<tr class="memitem:a05b1b805b9360bbba6dc798379a72f0d"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a05b1b805b9360bbba6dc798379a72f0d">OnInitialize</a> ()</td></tr>
+<tr class="memdesc:a05b1b805b9360bbba6dc798379a72f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should be used to perform any necessary one time set up for the node, such as caching references to any blackboard entries used by the node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a05b1b805b9360bbba6dc798379a72f0d">More...</a><br /></td></tr>
 <tr class="separator:a05b1b805b9360bbba6dc798379a72f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab52ceaee35df50d1fe9f93b34c6160ac"><td class="memItemLeft" align="right" valign="top"><a id="ab52ceaee35df50d1fe9f93b34c6160ac" name="ab52ceaee35df50d1fe9f93b34c6160ac"></a>
-abstract BehaviorStatus&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> ()</td></tr>
+<tr class="memitem:ab52ceaee35df50d1fe9f93b34c6160ac"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab52ceaee35df50d1fe9f93b34c6160ac">OnTick</a> ()</td></tr>
+<tr class="memdesc:ab52ceaee35df50d1fe9f93b34c6160ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should be used to implement any functionality for the node and should return an appropriate status for the node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab52ceaee35df50d1fe9f93b34c6160ac">More...</a><br /></td></tr>
 <tr class="separator:ab52ceaee35df50d1fe9f93b34c6160ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a03b9225d3ca16613ff14a59cd1fefd16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a03b9225d3ca16613ff14a59cd1fefd16">Blackboard</a><code> [get]</code></td></tr>
+<tr class="memdesc:a03b9225d3ca16613ff14a59cd1fefd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the behavior tree's blackboard.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a03b9225d3ca16613ff14a59cd1fefd16">More...</a><br /></td></tr>
 <tr class="separator:a03b9225d3ca16613ff14a59cd1fefd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b6a051b74dceefc81d641fba41ad49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a59b6a051b74dceefc81d641fba41ad49">Children</a><code> [getprivate set]</code></td></tr>
+<tr class="memdesc:a59b6a051b74dceefc81d641fba41ad49"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of child nodes.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a59b6a051b74dceefc81d641fba41ad49">More...</a><br /></td></tr>
 <tr class="separator:a59b6a051b74dceefc81d641fba41ad49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3aa56c1c04435f40fd8a1880c80c562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ad3aa56c1c04435f40fd8a1880c80c562">Parent</a><code> [getprivate set]</code></td></tr>
+<tr class="memdesc:ad3aa56c1c04435f40fd8a1880c80c562"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ad3aa56c1c04435f40fd8a1880c80c562">More...</a><br /></td></tr>
 <tr class="separator:ad3aa56c1c04435f40fd8a1880c80c562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad06c922f7d837ee43121fd499423c2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#aad06c922f7d837ee43121fd499423c2b">Root</a><code> [getprivate set]</code></td></tr>
+<tr class="memdesc:aad06c922f7d837ee43121fd499423c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The behavior tree, or root of the tree.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#aad06c922f7d837ee43121fd499423c2b">More...</a><br /></td></tr>
 <tr class="separator:aad06c922f7d837ee43121fd499423c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae420b163d7ae51015d246a802ed32f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html">BehaviorSubnode</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ae420b163d7ae51015d246a802ed32f11">Subnodes</a><code> [getprivate set]</code></td></tr>
+<tr class="memdesc:ae420b163d7ae51015d246a802ed32f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of attached subnode components.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ae420b163d7ae51015d246a802ed32f11">More...</a><br /></td></tr>
 <tr class="separator:ae420b163d7ae51015d246a802ed32f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00006">6</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<div class="textblock"><p >The base class for all behavior nodes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00009">9</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a846f9e94897ebc6bc6bf876c398088d1" name="a846f9e94897ebc6bc6bf876c398088d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a846f9e94897ebc6bc6bf876c398088d1">&#9670;&nbsp;</a></span>AddChildNode&lt; T &gt;()</h2>
@@ -175,6 +189,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a child to the node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The child Game Object name.</td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -184,7 +206,7 @@ Properties</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00049">49</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00095">95</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -202,6 +224,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a subnode to the node. </p>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -211,7 +235,7 @@ Properties</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00056">56</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00105">105</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -239,7 +263,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00061">61</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>Returns an array of components on the immediate children of the specified transform. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent transform.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00115">115</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -277,7 +309,75 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00017">17</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>Initializes the node and its child nodes and subnodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The behavior tree, or root node.</td></tr>
+    <tr><td class="paramname">parent</td><td>The parent node.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00055">55</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+
+</div>
+</div>
+<a id="a05b1b805b9360bbba6dc798379a72f0d" name="a05b1b805b9360bbba6dc798379a72f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b1b805b9360bbba6dc798379a72f0d">&#9670;&nbsp;</a></span>OnInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void MPewsey.BehaviorTree.Nodes.BehaviorNode.OnInitialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method should be used to perform any necessary one time set up for the node, such as caching references to any blackboard entries used by the node. </p>
+<p >This method is called when the Initialize method is called for the node. </p>
+
+<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">MPewsey.BehaviorTree.Nodes.SelectorNode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a668a9a28a3e21a593ac0ef755a96799d">MPewsey.BehaviorTree.Nodes.SequenceNode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_status_node.html#a445f9a5c5e106087fe319ed12ee5a2ae">MPewsey.BehaviorTree.Nodes.StatusNode</a>.</p>
+
+</div>
+</div>
+<a id="ab52ceaee35df50d1fe9f93b34c6160ac" name="ab52ceaee35df50d1fe9f93b34c6160ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52ceaee35df50d1fe9f93b34c6160ac">&#9670;&nbsp;</a></span>OnTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a> MPewsey.BehaviorTree.Nodes.BehaviorNode.OnTick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method should be used to implement any functionality for the node and should return an appropriate status for the node. </p>
+
+<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#ab9c747e4418254bd8d4c35d4f6ddf2ff">MPewsey.BehaviorTree.Nodes.SelectorNode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a77b29c3c92541f351458e3a24692c77f">MPewsey.BehaviorTree.Nodes.SequenceNode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_status_node.html#a619ebbedb99085059c756c30aff80a80">MPewsey.BehaviorTree.Nodes.StatusNode</a>.</p>
 
 </div>
 </div>
@@ -288,7 +388,7 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BehaviorStatus MPewsey.BehaviorTree.Nodes.BehaviorNode.Tick </td>
+          <td class="memname"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a> MPewsey.BehaviorTree.Nodes.BehaviorNode.Tick </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -296,7 +396,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00036">36</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>Ticks all subnodes in a sequence, then calls the nodes OnTick methods if they are all satisfied. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00078">78</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -321,7 +423,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00012">12</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>Returns the behavior tree's blackboard. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00034">34</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -345,7 +449,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00010">10</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>An array of child nodes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00024">24</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -369,7 +475,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00009">9</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>The parent node. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00019">19</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -393,7 +501,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00008">8</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>The behavior tree, or root of the tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00014">14</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -417,7 +527,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00011">11</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
+<p>An array of attached subnode components. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_node_8cs_source.html#l00029">29</a> of file <a class="el" href="_behavior_node_8cs_source.html">BehaviorNode.cs</a>.</p>
 
 </div>
 </div>

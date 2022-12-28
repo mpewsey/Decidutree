@@ -1,9 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "bmpst",
+  0: "abcegikmoprstv",
   1: "bpst",
   2: "m",
-  3: "b"
+  3: "abcegiost",
+  4: "b",
+  5: "bcekmprstv",
+  6: "b"
 };
 
 var indexSectionNames =
@@ -11,7 +14,10 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "pages"
+  3: "functions",
+  4: "enums",
+  5: "properties",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -19,6 +25,9 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Namespaces",
-  3: "Pages"
+  3: "Functions",
+  4: "Enumerations",
+  5: "Properties",
+  6: "Pages"
 };
 
