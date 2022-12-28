@@ -1,5 +1,8 @@
 namespace MPewsey.BehaviorTree.Nodes
 {
+    /// <summary>
+    /// Ticks the node's children until the first Success or Running node is found.
+    /// </summary>
     public class SelectorNode : BehaviorNode
     {
         protected override void OnInitialize()
@@ -7,6 +10,10 @@ namespace MPewsey.BehaviorTree.Nodes
 
         }
 
+        /// <summary>
+        /// Ticks the node's children until the first Success or Running node is found
+        /// and returns the status. Returns Failure if no nodes are running or successful.
+        /// </summary>
         protected override BehaviorStatus OnTick()
         {
             foreach (var node in Children)
