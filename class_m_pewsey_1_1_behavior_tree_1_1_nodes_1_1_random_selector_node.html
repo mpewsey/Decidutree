@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Behavior Tree: MPewsey.BehaviorTree.Nodes.SequenceNode Class Reference</title>
+<title>Behavior Tree: MPewsey.BehaviorTree.Nodes.RandomSelectorNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,35 +98,47 @@ $(document).ready(function(){initNavTree('class_m_pewsey_1_1_behavior_tree_1_1_n
 <div class="header">
   <div class="summary">
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">MPewsey.BehaviorTree.Nodes.SequenceNode Class Reference</div></div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">MPewsey.BehaviorTree.Nodes.RandomSelectorNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Ticks the node's children until the first Failure or Running node is found.  
- <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#details">More...</a></p>
+<p>A selector node that operates on child nodes in a random order.  
+ <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for MPewsey.BehaviorTree.Nodes.SequenceNode:</div>
+Inheritance diagram for MPewsey.BehaviorTree.Nodes.RandomSelectorNode:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.png" usemap="#MPewsey.BehaviorTree.Nodes.SequenceNode_map" alt=""/>
-  <map id="MPewsey.BehaviorTree.Nodes.SequenceNode_map" name="MPewsey.BehaviorTree.Nodes.SequenceNode_map">
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html" title="The base class for all behavior nodes." alt="MPewsey.BehaviorTree.Nodes.BehaviorNode" shape="rect" coords="0,56,278,80"/>
+  <img src="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.png" usemap="#MPewsey.BehaviorTree.Nodes.RandomSelectorNode_map" alt=""/>
+  <map id="MPewsey.BehaviorTree.Nodes.RandomSelectorNode_map" name="MPewsey.BehaviorTree.Nodes.RandomSelectorNode_map">
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html" title="Ticks the node&#39;s children until the first Success or Running node is found." alt="MPewsey.BehaviorTree.Nodes.SelectorNode" shape="rect" coords="0,112,314,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html" title="The base class for all behavior nodes." alt="MPewsey.BehaviorTree.Nodes.BehaviorNode" shape="rect" coords="0,56,314,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a668a9a28a3e21a593ac0ef755a96799d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a668a9a28a3e21a593ac0ef755a96799d">OnInitialize</a> ()</td></tr>
-<tr class="memdesc:a668a9a28a3e21a593ac0ef755a96799d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a668a9a28a3e21a593ac0ef755a96799d">More...</a><br /></td></tr>
-<tr class="separator:a668a9a28a3e21a593ac0ef755a96799d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b29c3c92541f351458e3a24692c77f"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a77b29c3c92541f351458e3a24692c77f">OnTick</a> ()</td></tr>
-<tr class="memdesc:a77b29c3c92541f351458e3a24692c77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks the node's children until the first Failure or Running node is found and returns the status. Returns Success if no running or failing node is found.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html#a77b29c3c92541f351458e3a24692c77f">More...</a><br /></td></tr>
-<tr class="separator:a77b29c3c92541f351458e3a24692c77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa315f0ae47b74225a064aa90b5e60697"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html#aa315f0ae47b74225a064aa90b5e60697">OnTick</a> ()</td></tr>
+<tr class="memdesc:aa315f0ae47b74225a064aa90b5e60697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles the child nodes then ticks them in the same manner as a <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html" title="Ticks the node&#39;s children until the first Success or Running node is found.">SelectorNode</a>.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html#aa315f0ae47b74225a064aa90b5e60697">More...</a><br /></td></tr>
+<tr class="separator:aa315f0ae47b74225a064aa90b5e60697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html">MPewsey.BehaviorTree.Nodes.SelectorNode</a></td></tr>
+<tr class="memitem:a9ac26cdbe08e59cf736ec03f730e00a9 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">OnInitialize</a> ()</td></tr>
+<tr class="memdesc:a9ac26cdbe08e59cf736ec03f730e00a9 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">More...</a><br /></td></tr>
+<tr class="separator:a9ac26cdbe08e59cf736ec03f730e00a9 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c747e4418254bd8d4c35d4f6ddf2ff inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#ab9c747e4418254bd8d4c35d4f6ddf2ff">OnTick</a> ()</td></tr>
+<tr class="memdesc:ab9c747e4418254bd8d4c35d4f6ddf2ff inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks the node's children until the first Success or Running node is found and returns the status. Returns Failure if no nodes are running or successful.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#ab9c747e4418254bd8d4c35d4f6ddf2ff">More...</a><br /></td></tr>
+<tr class="separator:ab9c747e4418254bd8d4c35d4f6ddf2ff inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">MPewsey.BehaviorTree.Nodes.BehaviorNode</a></td></tr>
 <tr class="memitem:ab2718f13648e730b8ff1c1b4af598453 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab2718f13648e730b8ff1c1b4af598453">Initialize</a> (<a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html">BehaviorTree</a> root, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a> parent)</td></tr>
 <tr class="memdesc:ab2718f13648e730b8ff1c1b4af598453 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the node and its child nodes and subnodes.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab2718f13648e730b8ff1c1b4af598453">More...</a><br /></td></tr>
 <tr class="separator:ab2718f13648e730b8ff1c1b4af598453 inherit pro_methods_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8f38e4f7a8f0b73943589146d815aff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html#a8f38e4f7a8f0b73943589146d815aff1">ShuffleChildren</a> ()</td></tr>
+<tr class="memdesc:a8f38e4f7a8f0b73943589146d815aff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuffles the child nodes array.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html#a8f38e4f7a8f0b73943589146d815aff1">More...</a><br /></td></tr>
+<tr class="separator:a8f38e4f7a8f0b73943589146d815aff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -162,12 +174,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae420b163d7ae51015d246a802ed32f11 inherit properties_class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Ticks the node's children until the first Failure or Running node is found. </p>
+<div class="textblock"><p >A selector node that operates on child nodes in a random order. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sequence_node_8cs_source.html#l00006">6</a> of file <a class="el" href="_sequence_node_8cs_source.html">SequenceNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_random_selector_node_8cs_source.html#l00008">8</a> of file <a class="el" href="_random_selector_node_8cs_source.html">RandomSelectorNode.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a668a9a28a3e21a593ac0ef755a96799d" name="a668a9a28a3e21a593ac0ef755a96799d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a668a9a28a3e21a593ac0ef755a96799d">&#9670;&nbsp;</a></span>OnInitialize()</h2>
+<a id="aa315f0ae47b74225a064aa90b5e60697" name="aa315f0ae47b74225a064aa90b5e60697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa315f0ae47b74225a064aa90b5e60697">&#9670;&nbsp;</a></span>OnTick()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +188,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override void MPewsey.BehaviorTree.Nodes.SequenceNode.OnInitialize </td>
+          <td class="memname">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a> MPewsey.BehaviorTree.Nodes.RandomSelectorNode.OnTick </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -189,54 +201,52 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Does nothing. </p>
-
-<p>Implements <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a05b1b805b9360bbba6dc798379a72f0d">MPewsey.BehaviorTree.Nodes.BehaviorNode</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_sequence_node_8cs_source.html#l00011">11</a> of file <a class="el" href="_sequence_node_8cs_source.html">SequenceNode.cs</a>.</p>
-
-</div>
-</div>
-<a id="a77b29c3c92541f351458e3a24692c77f" name="a77b29c3c92541f351458e3a24692c77f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b29c3c92541f351458e3a24692c77f">&#9670;&nbsp;</a></span>OnTick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a> MPewsey.BehaviorTree.Nodes.SequenceNode.OnTick </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Ticks the node's children until the first Failure or Running node is found and returns the status. Returns Success if no running or failing node is found. </p>
+<p>Shuffles the child nodes then ticks them in the same manner as a <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html" title="Ticks the node&#39;s children until the first Success or Running node is found.">SelectorNode</a>. </p>
 
 <p>Implements <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab52ceaee35df50d1fe9f93b34c6160ac">MPewsey.BehaviorTree.Nodes.BehaviorNode</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_sequence_node_8cs_source.html#l00020">20</a> of file <a class="el" href="_sequence_node_8cs_source.html">SequenceNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_random_selector_node_8cs_source.html#l00013">13</a> of file <a class="el" href="_random_selector_node_8cs_source.html">RandomSelectorNode.cs</a>.</p>
+
+</div>
+</div>
+<a id="a8f38e4f7a8f0b73943589146d815aff1" name="a8f38e4f7a8f0b73943589146d815aff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f38e4f7a8f0b73943589146d815aff1">&#9670;&nbsp;</a></span>ShuffleChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MPewsey.BehaviorTree.Nodes.RandomSelectorNode.ShuffleChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shuffles the child nodes array. </p>
+
+<p class="definition">Definition at line <a class="el" href="_random_selector_node_8cs_source.html#l00022">22</a> of file <a class="el" href="_random_selector_node_8cs_source.html">RandomSelectorNode.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/github/workspace/Scripts/Runtime/Nodes/<a class="el" href="_sequence_node_8cs_source.html">SequenceNode.cs</a></li>
+<li>/github/workspace/Scripts/Runtime/Nodes/<a class="el" href="_random_selector_node_8cs_source.html">RandomSelectorNode.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_m_pewsey.html">MPewsey</a></li><li class="navelem"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html">BehaviorTree</a></li><li class="navelem"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html">Nodes</a></li><li class="navelem"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_sequence_node.html">SequenceNode</a></li>
+    <li class="navelem"><a class="el" href="namespace_m_pewsey.html">MPewsey</a></li><li class="navelem"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html">BehaviorTree</a></li><li class="navelem"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html">Nodes</a></li><li class="navelem"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html">RandomSelectorNode</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

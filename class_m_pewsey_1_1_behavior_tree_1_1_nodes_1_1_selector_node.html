@@ -111,15 +111,16 @@ Inheritance diagram for MPewsey.BehaviorTree.Nodes.SelectorNode:</div>
  <div class="center">
   <img src="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.png" usemap="#MPewsey.BehaviorTree.Nodes.SelectorNode_map" alt=""/>
   <map id="MPewsey.BehaviorTree.Nodes.SelectorNode_map" name="MPewsey.BehaviorTree.Nodes.SelectorNode_map">
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html" title="The base class for all behavior nodes." alt="MPewsey.BehaviorTree.Nodes.BehaviorNode" shape="rect" coords="0,56,273,80"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html" title="A behavior tree component." alt="MPewsey.BehaviorTree.BehaviorTree" shape="rect" coords="0,168,273,192"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html" title="The base class for all behavior nodes." alt="MPewsey.BehaviorTree.Nodes.BehaviorNode" shape="rect" coords="162,56,476,80"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html" title="A behavior tree component." alt="MPewsey.BehaviorTree.BehaviorTree" shape="rect" coords="0,168,314,192"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_random_selector_node.html" title="A selector node that operates on child nodes in a random order." alt="MPewsey.BehaviorTree.Nodes.RandomSelectorNode" shape="rect" coords="324,168,638,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9ac26cdbe08e59cf736ec03f730e00a9"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">OnInitialize</a> ()</td></tr>
-<tr class="memdesc:a9ac26cdbe08e59cf736ec03f730e00a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should be used to perform any necessary one time set up for the node, such as caching references to any blackboard entries used by the node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">More...</a><br /></td></tr>
+<tr class="memdesc:a9ac26cdbe08e59cf736ec03f730e00a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#a9ac26cdbe08e59cf736ec03f730e00a9">More...</a><br /></td></tr>
 <tr class="separator:a9ac26cdbe08e59cf736ec03f730e00a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c747e4418254bd8d4c35d4f6ddf2ff"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b">BehaviorStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#ab9c747e4418254bd8d4c35d4f6ddf2ff">OnTick</a> ()</td></tr>
 <tr class="memdesc:ab9c747e4418254bd8d4c35d4f6ddf2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks the node's children until the first Success or Running node is found and returns the status. Returns Failure if no nodes are running or successful.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html#ab9c747e4418254bd8d4c35d4f6ddf2ff">More...</a><br /></td></tr>
@@ -190,12 +191,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method should be used to perform any necessary one time set up for the node, such as caching references to any blackboard entries used by the node. </p>
-<p >This method is called when the Initialize method is called for the node. </p>
+<p>Does nothing. </p>
 
 <p>Implements <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#a05b1b805b9360bbba6dc798379a72f0d">MPewsey.BehaviorTree.Nodes.BehaviorNode</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_selector_node_8cs_source.html#l00008">8</a> of file <a class="el" href="_selector_node_8cs_source.html">SelectorNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_selector_node_8cs_source.html#l00011">11</a> of file <a class="el" href="_selector_node_8cs_source.html">SelectorNode.cs</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html#ab52ceaee35df50d1fe9f93b34c6160ac">MPewsey.BehaviorTree.Nodes.BehaviorNode</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_selector_node_8cs_source.html#l00017">17</a> of file <a class="el" href="_selector_node_8cs_source.html">SelectorNode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_selector_node_8cs_source.html#l00020">20</a> of file <a class="el" href="_selector_node_8cs_source.html">SelectorNode.cs</a>.</p>
 
 </div>
 </div>
