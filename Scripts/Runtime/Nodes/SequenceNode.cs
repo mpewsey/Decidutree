@@ -5,6 +5,9 @@ namespace MPewsey.BehaviorTree.Nodes
     /// </summary>
     public class SequenceNode : BehaviorNode
     {
+        /// <summary>
+        /// Does nothing.
+        /// </summary>
         protected override void OnInitialize()
         {
 
