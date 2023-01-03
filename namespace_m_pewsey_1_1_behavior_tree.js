@@ -6,7 +6,7 @@ var namespace_m_pewsey_1_1_behavior_tree =
     [ "BehaviorTree", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree" ],
     [ "Blackboard", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard" ],
     [ "BlackboardEntry", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry" ],
-    [ "BlackboardKeys", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_keys.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_keys" ],
+    [ "Comparison", "class_m_pewsey_1_1_behavior_tree_1_1_comparison.html", "class_m_pewsey_1_1_behavior_tree_1_1_comparison" ],
     [ "BehaviorStatus", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b", [
       [ "Failure", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692bae139a585510a502bbf1841cf589f5086", null ],
       [ "Success", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692ba505a83f220c02df2f85c3810cd9ceb38", null ],

@@ -6,5 +6,6 @@ var dir_bd02518d4f499cf99d7b393e1af10b35 =
     [ "BehaviorTree.cs", "_behavior_tree_8cs_source.html", null ],
     [ "Blackboard.cs", "_blackboard_8cs_source.html", null ],
     [ "BlackboardEntry.cs", "_blackboard_entry_8cs_source.html", null ],
-    [ "BlackboardKeys.cs", "_blackboard_keys_8cs_source.html", null ]
+    [ "Comparison.cs", "_comparison_8cs_source.html", null ],
+    [ "ComparisonType.cs", "_comparison_type_8cs_source.html", null ]
 ];

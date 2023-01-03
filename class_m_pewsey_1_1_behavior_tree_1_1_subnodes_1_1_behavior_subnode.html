@@ -113,11 +113,10 @@ Inheritance diagram for MPewsey.BehaviorTree.Subnodes.BehaviorSubnode:</div>
  <div class="center">
   <img src="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.png" usemap="#MPewsey.BehaviorTree.Subnodes.BehaviorSubnode_map" alt=""/>
   <map id="MPewsey.BehaviorTree.Subnodes.BehaviorSubnode_map" name="MPewsey.BehaviorTree.Subnodes.BehaviorSubnode_map">
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html" title="A subnode that returns success with a specified probability." alt="MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode" shape="rect" coords="0,112,385,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode.html" title="Returns success if the tick count blackboard entry is even." alt="MPewsey.BehaviorTree.Subnodes.TickCountIsEvenSubnode" shape="rect" coords="395,112,780,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode.html" title="Returns success if the tick count blackboard entry is odd." alt="MPewsey.BehaviorTree.Subnodes.TickCountIsOddSubnode" shape="rect" coords="790,112,1175,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode.html" title="Returns success if the modulo of the tick count is equal to a specified value." alt="MPewsey.BehaviorTree.Subnodes.TickCountModIsValueSubnode" shape="rect" coords="1185,112,1570,136"/>
-<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode.html" title="Increments the tick count entry on the blackboard." alt="MPewsey.BehaviorTree.Subnodes.TickCounterSubnode" shape="rect" coords="1580,112,1965,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html" title="Compares a blackboard value against a specified value." alt="MPewsey.BehaviorTree.Subnodes.ComparisonSubnode&lt; T &gt;" shape="rect" coords="0,112,360,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode.html" title="Increments the specified blackboard entry." alt="MPewsey.BehaviorTree.Subnodes.CounterSubnode" shape="rect" coords="370,112,730,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html" title="Compares the modulo of the blackboard value to a specified value." alt="MPewsey.BehaviorTree.Subnodes.ModuloSubnode" shape="rect" coords="740,112,1100,136"/>
+<area href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html" title="A subnode that returns success with a specified probability." alt="MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode" shape="rect" coords="1110,112,1470,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -221,7 +220,7 @@ Properties</h2></td></tr>
 <p>This method should be used to perform any necessary one time set up for the subnode, such as caching references to any blackboard entries used by the subnode. </p>
 <p >This method is called when the Initialize method is called for the subnode. </p>
 
-<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html#a5ac540c3530560a28529b1f746642646">MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode.html#aee008482926724d2db82a07fc3f60a75">MPewsey.BehaviorTree.Subnodes.TickCounterSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode.html#a99460a5710aa04597a49d67f896f6cd0">MPewsey.BehaviorTree.Subnodes.TickCountIsEvenSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode.html#ad88e82d0b9fc1e16b294c3bdfd86adbe">MPewsey.BehaviorTree.Subnodes.TickCountIsOddSubnode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode.html#af751d7910eff2400653bde276e6077a7">MPewsey.BehaviorTree.Subnodes.TickCountModIsValueSubnode</a>.</p>
+<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html#a8c6f85a339caf333f43741db46edc8a0">MPewsey.BehaviorTree.Subnodes.ComparisonSubnode&lt; T &gt;</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode.html#a2f4211e74bad58d587cb78b906083650">MPewsey.BehaviorTree.Subnodes.CounterSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html#ad6fe7087ca365b7fcc777fd9635918ad">MPewsey.BehaviorTree.Subnodes.ModuloSubnode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html#a5ac540c3530560a28529b1f746642646">MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode</a>.</p>
 
 </div>
 </div>
@@ -250,7 +249,7 @@ Properties</h2></td></tr>
 
 <p>This method should be used to implement any functionality for the subnode and should return an appropriate status for the subnode. </p>
 
-<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html#a45fca1bda2eddb98d4a23ccac04298a0">MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode.html#a87e5fef4a4a56f346715273816fd0cf3">MPewsey.BehaviorTree.Subnodes.TickCounterSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode.html#a5b69ada6e10a3e99c48435a6a67a5037">MPewsey.BehaviorTree.Subnodes.TickCountIsEvenSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode.html#ae58fb4683db495e48ac3229cca39ee4f">MPewsey.BehaviorTree.Subnodes.TickCountIsOddSubnode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode.html#aa657804b586d79b80339c0db1fe13f42">MPewsey.BehaviorTree.Subnodes.TickCountModIsValueSubnode</a>.</p>
+<p>Implemented in <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html#a665ae1fe1dd9386ddf7af3e86ccc6349">MPewsey.BehaviorTree.Subnodes.ComparisonSubnode&lt; T &gt;</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode.html#ab18035dd48628c66d6b65d644d9dfe16">MPewsey.BehaviorTree.Subnodes.CounterSubnode</a>, <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html#a974684b1906588fc221f2212b963c362">MPewsey.BehaviorTree.Subnodes.ModuloSubnode</a>, and <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html#a45fca1bda2eddb98d4a23ccac04298a0">MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode</a>.</p>
 
 </div>
 </div>

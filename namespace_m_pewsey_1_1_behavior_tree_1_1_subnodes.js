@@ -1,9 +1,11 @@
 var namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes =
 [
     [ "BehaviorSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode" ],
-    [ "ProbabilitySubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode" ],
-    [ "TickCounterSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode" ],
-    [ "TickCountIsEvenSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode" ],
-    [ "TickCountIsOddSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode" ],
-    [ "TickCountModIsValueSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode" ]
+    [ "ComparisonSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode" ],
+    [ "ComparisonSubnodeDouble", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_double.html", null ],
+    [ "ComparisonSubnodeFloat", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_float.html", null ],
+    [ "ComparisonSubnodeInt", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_int.html", null ],
+    [ "CounterSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode" ],
+    [ "ModuloSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode" ],
+    [ "ProbabilitySubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode" ]
 ];

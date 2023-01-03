@@ -2,7 +2,16 @@ var hierarchy =
 [
     [ "MPewsey.BehaviorTree.Blackboard", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html", null ],
     [ "MPewsey.BehaviorTree.BlackboardEntry< T >", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html", null ],
-    [ "MPewsey.BehaviorTree.BlackboardKeys", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_keys.html", null ],
+    [ "MPewsey.BehaviorTree.Comparison", "class_m_pewsey_1_1_behavior_tree_1_1_comparison.html", null ],
+    [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnode< double >", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html", [
+      [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnodeDouble", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_double.html", null ]
+    ] ],
+    [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnode< float >", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html", [
+      [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnodeFloat", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_float.html", null ]
+    ] ],
+    [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnode< int >", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html", [
+      [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnodeInt", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode_int.html", null ]
+    ] ],
     [ "UnityEditor.Editor", null, [
       [ "MPewsey.BehaviorTree.Editor.BehaviorTreeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behavior_tree_editor.html", null ],
       [ "MPewsey.BehaviorTree.Nodes.Editor.RandomSelectorNodeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_random_selector_node_editor.html", null ],
@@ -19,11 +28,10 @@ var hierarchy =
         [ "MPewsey.BehaviorTree.Nodes.StatusNode", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_status_node.html", null ]
       ] ],
       [ "MPewsey.BehaviorTree.Subnodes.BehaviorSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html", [
-        [ "MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html", null ],
-        [ "MPewsey.BehaviorTree.Subnodes.TickCountIsEvenSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_even_subnode.html", null ],
-        [ "MPewsey.BehaviorTree.Subnodes.TickCountIsOddSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_is_odd_subnode.html", null ],
-        [ "MPewsey.BehaviorTree.Subnodes.TickCountModIsValueSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_count_mod_is_value_subnode.html", null ],
-        [ "MPewsey.BehaviorTree.Subnodes.TickCounterSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_tick_counter_subnode.html", null ]
+        [ "MPewsey.BehaviorTree.Subnodes.ComparisonSubnode< T >", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_comparison_subnode.html", null ],
+        [ "MPewsey.BehaviorTree.Subnodes.CounterSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_counter_subnode.html", null ],
+        [ "MPewsey.BehaviorTree.Subnodes.ModuloSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html", null ],
+        [ "MPewsey.BehaviorTree.Subnodes.ProbabilitySubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html", null ]
       ] ]
     ] ]
 ];
