@@ -19,6 +19,16 @@ namespace MPewsey.BehaviorTree.Subnodes
             set => _probability = Mathf.Clamp(value, 0, 1);
         }
 
+        /// <summary>
+        /// Sets the values for the subnode and returns the subnode.
+        /// </summary>
+        /// <param name="probability">The success probability.</param>
+        public ProbabilitySubnode SetValues(float probability)
+        {
+            Probability = probability;
+            return this;
+        }
+
         private void OnValidate()
         {
             Probability = Probability;

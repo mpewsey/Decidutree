@@ -39,7 +39,7 @@ namespace MPewsey.BehaviorTree.Tests.PlayMode
         {
             var nodes = new BehaviorSubnode[]
             {
-                Tree.AddSubnode<TickCounterSubnode>(),
+                Tree.AddSubnode<CounterSubnode>().SetValues("Counter"),
             };
 
             Tree.Initialize();

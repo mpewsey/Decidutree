@@ -15,6 +15,16 @@ namespace MPewsey.BehaviorTree.Nodes
         public BehaviorStatus Status { get => _status; set => _status = value; }
 
         /// <summary>
+        /// Sets the node values and returns the node.
+        /// </summary>
+        /// <param name="status">The return status.</param>
+        public StatusNode SetValues(BehaviorStatus status)
+        {
+            Status = status;
+            return this;
+        }
+
+        /// <summary>
         /// Does nothing.
         /// </summary>
         protected override void OnInitialize()

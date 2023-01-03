@@ -20,16 +20,12 @@ namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
             Object.DestroyImmediate(Tree.gameObject);
         }
 
-        [Test]
-        public void TestTick()
+        [TestCase(12345)]
+        public void TestTick(int seed)
         {
-            var seed = 12345;
-            Tree.AddSubnode<TickCounterSubnode>();
+            var subnode = Tree.AddSubnode<ProbabilitySubnode>().SetValues(0.5f);
 
-            var subnode = Tree.AddSubnode<ProbabilitySubnode>();
-            subnode.Probability = 0.5f;
-
-            Tree.AddChildNode<StatusNode>("Success Node").Status = BehaviorStatus.Success;
+            Tree.AddChildNode<StatusNode>("Success Node").SetValues(BehaviorStatus.Success);
             Tree.Initialize();
 
             Random.InitState(seed);
