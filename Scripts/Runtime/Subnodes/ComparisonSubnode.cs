@@ -52,7 +52,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// </summary>
         protected override void OnInitialize()
         {
-            Entry = Blackboard.GetValue<T>(Key);
+            Entry = Blackboard.EnsureSetValue<T>(Key, default);
         }
 
         /// <summary>
