@@ -108,7 +108,10 @@ $(document).ready(function(){initNavTree('class_m_pewsey_1_1_behavior_tree_1_1_c
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0596892549bf4d6688f33d1c61d41301"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#a0596892549bf4d6688f33d1c61d41301">IsSatisfied&lt; T &gt;</a> (ComparisonType comparisonType, T left, T right)</td></tr>
+<tr class="memitem:af0d09f26789713c349da307be019d47e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#af0d09f26789713c349da307be019d47e">IsSatisfied</a> (<a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2">ComparisonType</a> comparisonType, int comparison)</td></tr>
+<tr class="memdesc:af0d09f26789713c349da307be019d47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the comparison is satisfied.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#af0d09f26789713c349da307be019d47e">More...</a><br /></td></tr>
+<tr class="separator:af0d09f26789713c349da307be019d47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0596892549bf4d6688f33d1c61d41301"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#a0596892549bf4d6688f33d1c61d41301">IsSatisfied&lt; T &gt;</a> (<a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2">ComparisonType</a> comparisonType, T left, T right)</td></tr>
 <tr class="memdesc:a0596892549bf4d6688f33d1c61d41301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the comparison between two values is satisfied.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#a0596892549bf4d6688f33d1c61d41301">More...</a><br /></td></tr>
 <tr class="separator:a0596892549bf4d6688f33d1c61d41301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -117,6 +120,59 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_comparison_8cs_source.html#l00008">8</a> of file <a class="el" href="_comparison_8cs_source.html">Comparison.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af0d09f26789713c349da307be019d47e" name="af0d09f26789713c349da307be019d47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d09f26789713c349da307be019d47e">&#9670;&nbsp;</a></span>IsSatisfied()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool MPewsey.BehaviorTree.Comparison.IsSatisfied </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2">ComparisonType</a>&#160;</td>
+          <td class="paramname"><em>comparisonType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comparison</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the comparison is satisfied. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comparisonType</td><td>The comparison type.</td></tr>
+    <tr><td class="paramname">comparison</td><td>The comparison value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.ArgumentException</td><td>Raised if the comparison type is unhandled.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_comparison_8cs_source.html#l00027">27</a> of file <a class="el" href="_comparison_8cs_source.html">Comparison.cs</a>.</p>
+
+</div>
+</div>
 <a id="a0596892549bf4d6688f33d1c61d41301" name="a0596892549bf4d6688f33d1c61d41301"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0596892549bf4d6688f33d1c61d41301">&#9670;&nbsp;</a></span>IsSatisfied&lt; T &gt;()</h2>
 
@@ -127,9 +183,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool MPewsey.BehaviorTree.Comparison.IsSatisfied&lt; T &gt; </td>
+          <td class="memname">static bool <a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_comparison.html#af0d09f26789713c349da307be019d47e">MPewsey.BehaviorTree.Comparison.IsSatisfied</a>&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">ComparisonType&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2">ComparisonType</a>&#160;</td>
           <td class="paramname"><em>comparisonType</em>, </td>
         </tr>
         <tr>
@@ -166,14 +222,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">System.ArgumentException</td><td>Raised if the comparison type is not handled.</td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="_comparison_8cs_source.html#l00017">17</a> of file <a class="el" href="_comparison_8cs_source.html">Comparison.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_comparison_8cs_source.html#l00016">16</a> of file <a class="el" href="_comparison_8cs_source.html">Comparison.cs</a>.</p>
 
 </div>
 </div>
