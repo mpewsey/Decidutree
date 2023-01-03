@@ -13,11 +13,19 @@ namespace MPewsey.BehaviorTree
         /// <param name="comparisonType">The comparison type.</param>
         /// <param name="left">The left value.</param>
         /// <param name="right">The right value.</param>
-        /// <exception cref="System.ArgumentException">Raised if the comparison type is not handled.</exception>
         public static bool IsSatisfied<T>(ComparisonType comparisonType, T left, T right)
         {
-            var comparison = Comparer<T>.Default.Compare(left, right);
+            return IsSatisfied(comparisonType, Comparer<T>.Default.Compare(left, right));
+        }
 
+        /// <summary>
+        /// Returns true if the comparison is satisfied.
+        /// </summary>
+        /// <param name="comparisonType">The comparison type.</param>
+        /// <param name="comparison">The comparison value.</param>
+        /// <exception cref="System.ArgumentException">Raised if the comparison type is unhandled.</exception>
+        public static bool IsSatisfied(ComparisonType comparisonType, int comparison)
+        {
             switch (comparisonType)
             {
                 case ComparisonType.Equal:
