@@ -2,7 +2,7 @@ namespace MPewsey.BehaviorTree
 {
     public enum ComparisonType
     {
-        Equals,
+        Equal,
         NotEqual,
         LessThan,
         LessThanOrEqual,

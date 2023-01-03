@@ -25,7 +25,7 @@ namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
         {
             var blackboardValue = 100;
             var value = 100;
-            var comparisonType = ComparisonType.Equals;
+            var comparisonType = ComparisonType.Equal;
 
             var comparison = Tree.AddSubnode<ComparisonSubnodeInt>().SetValues("Test", comparisonType, value);
             Tree.AddChildNode<StatusNode>("Success Node").SetValues(BehaviorStatus.Success);
@@ -41,7 +41,7 @@ namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
         {
             var blackboardValue = 200;
             var value = 100;
-            var comparisonType = ComparisonType.Equals;
+            var comparisonType = ComparisonType.Equal;
 
             var comparison = Tree.AddSubnode<ComparisonSubnodeInt>().SetValues("Test", comparisonType, value);
             Tree.AddChildNode<StatusNode>("Success Node").SetValues(BehaviorStatus.Success);

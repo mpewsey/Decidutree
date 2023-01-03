@@ -25,7 +25,7 @@ namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
         {
             Tree.AddSubnode<CounterSubnode>().SetValues("Counter");
 
-            var subnode = Tree.AddSubnode<ModuloSubnode>().SetValues("Counter", 2, 1);
+            var subnode = Tree.AddSubnode<ModuloSubnode>().SetValues("Counter", 2, 1, ComparisonType.Equal);
 
             Tree.AddChildNode<StatusNode>("Success Node").SetValues(BehaviorStatus.Success);
             Tree.Initialize();
