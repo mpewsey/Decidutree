@@ -62,7 +62,7 @@ The library provides some generic nodes. However, to capture any unique behavior
 * The nodes of a tree instance share a Blackboard, an object with entries for shared variables. In the node and subnode `OnInitialize` method, it is often useful to acquire the blackboard entries for the shared variables used by the node, and cache them as properties on the component.
 * The `OnTick` method should implement any operations performed by the node. For subnodes, this may simply amount to evaluating a condition, then returning either Success or Failure.
 
-The below example, taken from the library, implements a custom behavior subnode. The purpose of the subnode is to evaluate whether the current number of ticks called on the tree is even, returning Success if it is, and Failure if it isn't. In the `OnInitialize` method, it caches the blackboard entry for the tick count, which is incremented separately by another component.
+The below example implements a custom behavior subnode. The purpose of the subnode is to evaluate whether the current number of ticks called on the tree is even, returning Success if it is, and Failure if it isn't. In the `OnInitialize` method, it caches the blackboard entry for the tick count, which is incremented separately by another component.
 
 ```TickCountIsEvenSubnode.cs
 public class TickCountIsEvenSubnode : BehaviorSubnode

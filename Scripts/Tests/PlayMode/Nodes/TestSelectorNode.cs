@@ -32,8 +32,8 @@ namespace MPewsey.BehaviorTree.Nodes.Tests.PlayMode
         {
             var node = Tree.AddChildNode<SelectorNode>("Selector Node");
 
-            node.AddChildNode<StatusNode>("Failure Node").Status = BehaviorStatus.Failure;
-            node.AddChildNode<StatusNode>("Failure Node").Status = BehaviorStatus.Failure;
+            node.AddChildNode<StatusNode>("Failure Node").SetValues(BehaviorStatus.Failure);
+            node.AddChildNode<StatusNode>("Failure Node").SetValues(BehaviorStatus.Failure);
 
             Tree.Initialize();
 
@@ -45,8 +45,8 @@ namespace MPewsey.BehaviorTree.Nodes.Tests.PlayMode
         {
             var node = Tree.AddChildNode<SelectorNode>("Selector Node");
 
-            node.AddChildNode<StatusNode>("Failure Node").Status = BehaviorStatus.Failure;
-            node.AddChildNode<StatusNode>("Success Node").Status = BehaviorStatus.Success;
+            node.AddChildNode<StatusNode>("Failure Node").SetValues(BehaviorStatus.Failure);
+            node.AddChildNode<StatusNode>("Success Node").SetValues(BehaviorStatus.Success);
 
             Tree.Initialize();
 

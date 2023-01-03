@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
 {
-    public class TestTickCountIsOddSubnode
+    public class TestCounterSubnode
     {
         private BehaviorTree Tree { get; set; }
 
@@ -23,16 +23,15 @@ namespace MPewsey.BehaviorTree.Subnodes.Tests.PlayMode
         [Test]
         public void TestTick()
         {
-            Tree.AddSubnode<TickCounterSubnode>();
-            var subnode = Tree.AddSubnode<TickCountIsOddSubnode>();
-            Tree.AddChildNode<StatusNode>("Success Node").Status = BehaviorStatus.Success;
+            var counter = Tree.AddSubnode<CounterSubnode>().SetValues("Counter");
+            var node = Tree.AddChildNode<StatusNode>("Success Node");
+            node.Status = BehaviorStatus.Success;
             Tree.Initialize();
 
             for (int i = 1; i < 1000; i++)
             {
-                var status = i % 2 == 1 ? BehaviorStatus.Success : BehaviorStatus.Failure;
-                Assert.AreEqual(status, Tree.Tick());
-                Assert.AreEqual(status, subnode.Tick());
+                Assert.AreEqual(BehaviorStatus.Success, Tree.Tick());
+                Assert.AreEqual(i, counter.Counter.Value);
             }
         }
     }
