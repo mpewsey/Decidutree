@@ -8,7 +8,7 @@ namespace MPewsey.BehaviorTree.Subnodes
     public abstract class ComparisonSubnode<T> : BehaviorSubnode
     {
         [SerializeField]
-        private string _key = "<None>";
+        private string _key;
         /// <summary>
         /// The blackboard key.
         /// </summary>
