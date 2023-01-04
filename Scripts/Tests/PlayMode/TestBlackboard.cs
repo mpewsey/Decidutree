@@ -33,5 +33,19 @@ namespace MPewsey.BehaviorTree.Tests.PlayMode
             var entry = new BlackboardEntry<int>("Test Key") { Value = 100 };
             Assert.AreEqual($"BlackboardEntry<{typeof(int)}>(Key = Test Key, Value = 100)", entry.ToString());
         }
+
+        [Test]
+        public void TestNullKeyThrowsException()
+        {
+            var blackboard = new Blackboard();
+            Assert.Throws<System.ArgumentException>(() => blackboard.SetValue(null, 1));
+        }
+
+        [Test]
+        public void TestEmptyStringThrowsException()
+        {
+            var blackboard = new Blackboard();
+            Assert.Throws<System.ArgumentException>(() => blackboard.SetValue("", 1));
+        }
     }
 }

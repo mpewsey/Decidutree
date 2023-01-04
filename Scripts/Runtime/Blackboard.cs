@@ -29,6 +29,7 @@ namespace MPewsey.BehaviorTree
         /// <param name="key">The entry key.</param>
         public BlackboardEntry<T> GetValue<T>(object key)
         {
+            ValidateKey(key);
             return (BlackboardEntry<T>)Entries[key];
         }
 
@@ -41,6 +42,8 @@ namespace MPewsey.BehaviorTree
         /// <param name="value">The entry value.</param>
         public BlackboardEntry<T> SetValue<T>(object key, T value)
         {
+            ValidateKey(key);
+
             if (Entries.TryGetValue(key, out object entry))
             {
                 var castEntry = (BlackboardEntry<T>)entry;
@@ -62,12 +65,30 @@ namespace MPewsey.BehaviorTree
         /// <param name="value">The entry value.</param>
         public BlackboardEntry<T> EnsureSetValue<T>(object key, T value)
         {
+            ValidateKey(key);
+
             if (Entries.TryGetValue(key, out object entry))
                 return (BlackboardEntry<T>)entry;
 
             var newEntry = CreateEntry<T>(key);
             newEntry.Value = value;
             return newEntry;
+        }
+
+        /// <summary>
+        /// Checks that the specified key is valid and raises exceptions if not.
+        /// </summary>
+        /// <param name="key">The entry key.</param>
+        /// <exception cref="System.ArgumentException">Raised for an invalid key.</exception>
+        private void ValidateKey(object key)
+        {
+            switch (key)
+            {
+                case null:
+                    throw new System.ArgumentException("Key cannot be null.");
+                case string str when string.IsNullOrWhiteSpace(str):
+                    throw new System.ArgumentException("String key cannot be null or whitespace.");
+            }
         }
     }
 }
