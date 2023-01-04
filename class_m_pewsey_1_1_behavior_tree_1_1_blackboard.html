@@ -131,6 +131,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:addd19516924ae0561aa88171ccd652fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html">BlackboardEntry</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#addd19516924ae0561aa88171ccd652fb">CreateEntry&lt; T &gt;</a> (object key)</td></tr>
 <tr class="memdesc:addd19516924ae0561aa88171ccd652fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new blackboard entry with the specified key and adds it to the dictionary.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#addd19516924ae0561aa88171ccd652fb">More...</a><br /></td></tr>
 <tr class="separator:addd19516924ae0561aa88171ccd652fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf3f451785db478c7398510d7fa914d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#acbf3f451785db478c7398510d7fa914d">ValidateKey</a> (object key)</td></tr>
+<tr class="memdesc:acbf3f451785db478c7398510d7fa914d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the specified key is valid and raises exceptions if not.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#acbf3f451785db478c7398510d7fa914d">More...</a><br /></td></tr>
+<tr class="separator:acbf3f451785db478c7398510d7fa914d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A blackboard, containing shared variable entries for a behavior tree instance. </p>
@@ -208,7 +211,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00063">63</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00066">66</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
@@ -275,7 +278,49 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00042">42</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00043">43</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+
+</div>
+</div>
+<a id="acbf3f451785db478c7398510d7fa914d" name="acbf3f451785db478c7398510d7fa914d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf3f451785db478c7398510d7fa914d">&#9670;&nbsp;</a></span>ValidateKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MPewsey.BehaviorTree.Blackboard.ValidateKey </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks that the specified key is valid and raises exceptions if not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The entry key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.ArgumentException</td><td>Raised for an invalid key.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00083">83</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
