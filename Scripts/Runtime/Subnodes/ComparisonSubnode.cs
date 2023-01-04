@@ -37,12 +37,12 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// Sets the values for the subnode and returns the subnode.
         /// </summary>
         /// <param name="key">The blackboard key.</param>
-        /// <param name="comparison">The comparison type.</param>
+        /// <param name="comparisonType">The comparison type.</param>
         /// <param name="value">The comparison value.</param>
-        public ComparisonSubnode<T> SetValues(string key, ComparisonType comparison, T value)
+        public ComparisonSubnode<T> SetValues(string key, ComparisonType comparisonType, T value)
         {
             Key = key;
-            ComparisonType = comparison;
+            ComparisonType = comparisonType;
             Value = value;
             return this;
         }
