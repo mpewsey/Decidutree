@@ -3,7 +3,7 @@ var annotated_dup =
     [ "MPewsey", "namespace_m_pewsey.html", [
       [ "BehaviorTree", "namespace_m_pewsey_1_1_behavior_tree.html", [
         [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor.html", [
-          [ "BehaviorTreeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behavior_tree_editor.html", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behavior_tree_editor" ]
+          [ "BehaviourTreeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behaviour_tree_editor.html", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behaviour_tree_editor" ]
         ] ],
         [ "Nodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html", [
           [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html", [
@@ -27,7 +27,7 @@ var annotated_dup =
           [ "ModuloSubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_modulo_subnode" ],
           [ "ProbabilitySubnode", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode.html", "class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_probability_subnode" ]
         ] ],
-        [ "BehaviorTree", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree" ],
+        [ "BehaviourTree", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree" ],
         [ "Blackboard", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard" ],
         [ "BlackboardEntry", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry" ],
         [ "Comparison", "class_m_pewsey_1_1_behavior_tree_1_1_comparison.html", "class_m_pewsey_1_1_behavior_tree_1_1_comparison" ]

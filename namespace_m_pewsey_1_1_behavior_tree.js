@@ -3,7 +3,7 @@ var namespace_m_pewsey_1_1_behavior_tree =
     [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor" ],
     [ "Nodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes" ],
     [ "Subnodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes" ],
-    [ "BehaviorTree", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behavior_tree" ],
+    [ "BehaviourTree", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree" ],
     [ "Blackboard", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard" ],
     [ "BlackboardEntry", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html", "class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry" ],
     [ "Comparison", "class_m_pewsey_1_1_behavior_tree_1_1_comparison.html", "class_m_pewsey_1_1_behavior_tree_1_1_comparison" ],
