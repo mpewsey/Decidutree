@@ -6,8 +6,8 @@ namespace MPewsey.BehaviorTree.Editor
     /// <summary>
     /// The behavior tree custom editor.
     /// </summary>
-    [CustomEditor(typeof(BehaviorTree))]
-    public class BehaviorTreeEditor : UnityEditor.Editor
+    [CustomEditor(typeof(BehaviourTree))]
+    public class BehaviourTreeEditor : UnityEditor.Editor
     {
         /// <summary>
         /// Creates a new behavior tree.
@@ -16,7 +16,7 @@ namespace MPewsey.BehaviorTree.Editor
         public static void CreateBehaviorTree()
         {
             var obj = new GameObject("Behavior Tree");
-            obj.AddComponent<BehaviorTree>();
+            obj.AddComponent<BehaviourTree>();
             obj.transform.SetParent(Selection.activeTransform);
         }
     }

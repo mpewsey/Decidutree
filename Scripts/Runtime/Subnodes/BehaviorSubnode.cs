@@ -12,7 +12,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// <summary>
         /// The behavior tree, or root of the tree.
         /// </summary>
-        public BehaviorTree Root { get; private set; }
+        public BehaviourTree Root { get; private set; }
 
         /// <summary>
         /// The parent node.
@@ -43,7 +43,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// </summary>
         /// <param name="root">The behavior tree, or root node.</param>
         /// <param name="parent">The parent node.</param>
-        public void Initialize(BehaviorTree root, BehaviorNode parent)
+        public void Initialize(BehaviourTree root, BehaviorNode parent)
         {
             Root = root;
             Parent = parent;

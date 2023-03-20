@@ -5,12 +5,12 @@ namespace MPewsey.BehaviorTree.Nodes.Tests.PlayMode
 {
     public class TestSelectorNode
     {
-        private BehaviorTree Tree { get; set; }
+        private BehaviourTree Tree { get; set; }
 
         [SetUp]
         public void SetUp()
         {
-            Tree = new GameObject("Behavior Tree").AddComponent<BehaviorTree>();
+            Tree = new GameObject("Behavior Tree").AddComponent<BehaviourTree>();
         }
 
         [TearDown]

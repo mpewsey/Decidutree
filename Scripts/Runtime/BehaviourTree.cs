@@ -7,7 +7,7 @@ namespace MPewsey.BehaviorTree
     /// 
     /// When ticked, the tree evaluates in the same manner as a SelectorNode.
     /// </summary>
-    public class BehaviorTree : SelectorNode
+    public class BehaviourTree : SelectorNode
     {
         /// <summary>
         /// The tree's blackboard.
