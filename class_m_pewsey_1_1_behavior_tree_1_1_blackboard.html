@@ -131,6 +131,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:addd19516924ae0561aa88171ccd652fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html">BlackboardEntry</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#addd19516924ae0561aa88171ccd652fb">CreateEntry&lt; T &gt;</a> (object key)</td></tr>
 <tr class="memdesc:addd19516924ae0561aa88171ccd652fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new blackboard entry with the specified key and adds it to the dictionary.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#addd19516924ae0561aa88171ccd652fb">More...</a><br /></td></tr>
 <tr class="separator:addd19516924ae0561aa88171ccd652fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5faed454f0f5270303b74cb6ee719b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html">BlackboardEntry</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#ad5faed454f0f5270303b74cb6ee719b0">GetEntry&lt; T &gt;</a> (object key)</td></tr>
+<tr class="memdesc:ad5faed454f0f5270303b74cb6ee719b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the blackboard entry for the specified key if it exists. Otherwise, returns null.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#ad5faed454f0f5270303b74cb6ee719b0">More...</a><br /></td></tr>
+<tr class="separator:ad5faed454f0f5270303b74cb6ee719b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbf3f451785db478c7398510d7fa914d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#acbf3f451785db478c7398510d7fa914d">ValidateKey</a> (object key)</td></tr>
 <tr class="memdesc:acbf3f451785db478c7398510d7fa914d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the specified key is valid and raises exceptions if not.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html#acbf3f451785db478c7398510d7fa914d">More...</a><br /></td></tr>
 <tr class="separator:acbf3f451785db478c7398510d7fa914d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +214,49 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00066">66</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00062">62</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad5faed454f0f5270303b74cb6ee719b0" name="ad5faed454f0f5270303b74cb6ee719b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5faed454f0f5270303b74cb6ee719b0">&#9670;&nbsp;</a></span>GetEntry&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard_entry.html">BlackboardEntry</a>&lt; T &gt; MPewsey.BehaviorTree.Blackboard.GetEntry&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the blackboard entry for the specified key if it exists. Otherwise, returns null. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The entry key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.InvalidCastException</td><td>Raised if the blackboard entry is not of the specified type.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00095">95</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
@@ -239,7 +284,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00030">30</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00031">31</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
@@ -278,7 +323,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00043">43</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00048">48</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
@@ -320,7 +365,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00083">83</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_blackboard_8cs_source.html#l00079">79</a> of file <a class="el" href="_blackboard_8cs_source.html">Blackboard.cs</a>.</p>
 
 </div>
 </div>
