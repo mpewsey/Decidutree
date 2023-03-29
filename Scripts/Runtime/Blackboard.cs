@@ -18,6 +18,7 @@ namespace MPewsey.BehaviorTree
         /// <param name="key">The entry key.</param>
         private BlackboardEntry<T> CreateEntry<T>(object key)
         {
+            ValidateKey(key);
             var entry = new BlackboardEntry<T>(key);
             Entries.Add(key, entry);
             return entry;
@@ -29,8 +30,12 @@ namespace MPewsey.BehaviorTree
         /// <param name="key">The entry key.</param>
         public BlackboardEntry<T> GetValue<T>(object key)
         {
-            ValidateKey(key);
-            return (BlackboardEntry<T>)Entries[key];
+            var entry = GetEntry<T>(key);
+
+            if (entry != null)
+                return entry;
+
+            throw new KeyNotFoundException($"Key does not exist: {key}.");
         }
 
         /// <summary>
@@ -42,18 +47,9 @@ namespace MPewsey.BehaviorTree
         /// <param name="value">The entry value.</param>
         public BlackboardEntry<T> SetValue<T>(object key, T value)
         {
-            ValidateKey(key);
-
-            if (Entries.TryGetValue(key, out object entry))
-            {
-                var castEntry = (BlackboardEntry<T>)entry;
-                castEntry.Value = value;
-                return castEntry;
-            }
-
-            var newEntry = CreateEntry<T>(key);
-            newEntry.Value = value;
-            return newEntry;
+            var entry = GetEntry<T>(key) ?? CreateEntry<T>(key);
+            entry.Value = value;
+            return entry;
         }
 
         /// <summary>
@@ -65,10 +61,10 @@ namespace MPewsey.BehaviorTree
         /// <param name="value">The entry value.</param>
         public BlackboardEntry<T> EnsureSetValue<T>(object key, T value)
         {
-            ValidateKey(key);
+            var entry = GetEntry<T>(key);
 
-            if (Entries.TryGetValue(key, out object entry))
-                return (BlackboardEntry<T>)entry;
+            if (entry != null)
+                return entry;
 
             var newEntry = CreateEntry<T>(key);
             newEntry.Value = value;
@@ -89,6 +85,25 @@ namespace MPewsey.BehaviorTree
                 case string str when string.IsNullOrWhiteSpace(str):
                     throw new System.ArgumentException("String key cannot be null or whitespace.");
             }
+        }
+
+        /// <summary>
+        /// Returns the blackboard entry for the specified key if it exists. Otherwise, returns null.
+        /// </summary>
+        /// <param name="key">The entry key.</param>
+        /// <exception cref="System.InvalidCastException">Raised if the blackboard entry is not of the specified type.</exception>
+        private BlackboardEntry<T> GetEntry<T>(object key)
+        {
+            ValidateKey(key);
+
+            if (Entries.TryGetValue(key, out object entry))
+            {
+                if (entry is BlackboardEntry<T> castEntry)
+                    return castEntry;
+                throw new System.InvalidCastException($"Invalid cast for key: {key}. Attempted to cast {entry.GetType()} to {typeof(BlackboardEntry<T>)}.");
+            }
+
+            return null;
         }
     }
 }
