@@ -143,6 +143,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a8a5fb668e5cbb387a85e03586aaf6fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_blackboard.html">Blackboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a8a5fb668e5cbb387a85e03586aaf6fd9">Blackboard</a><code> [get]</code></td></tr>
 <tr class="memdesc:a8a5fb668e5cbb387a85e03586aaf6fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the behavior tree's blackboard.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a8a5fb668e5cbb387a85e03586aaf6fd9">More...</a><br /></td></tr>
 <tr class="separator:a8a5fb668e5cbb387a85e03586aaf6fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5914ac0662ca9b89caf58baec683ec25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a5914ac0662ca9b89caf58baec683ec25">IsInitialized</a><code> [getprivate set]</code></td></tr>
+<tr class="memdesc:a5914ac0662ca9b89caf58baec683ec25"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the subnode has been initialized.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a5914ac0662ca9b89caf58baec683ec25">More...</a><br /></td></tr>
+<tr class="separator:a5914ac0662ca9b89caf58baec683ec25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a515eadcfb278011869035978341ea64e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html">BehaviorNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a515eadcfb278011869035978341ea64e">Parent</a><code> [getprivate set]</code></td></tr>
 <tr class="memdesc:a515eadcfb278011869035978341ea64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent node.  <a href="class_m_pewsey_1_1_behavior_tree_1_1_subnodes_1_1_behavior_subnode.html#a515eadcfb278011869035978341ea64e">More...</a><br /></td></tr>
 <tr class="separator:a515eadcfb278011869035978341ea64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +156,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The base class for all behavior subnodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00010">10</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00011">11</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1e671b782d4d9abdb526a426aeee0d1c" name="a1e671b782d4d9abdb526a426aeee0d1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e671b782d4d9abdb526a426aeee0d1c">&#9670;&nbsp;</a></span>Initialize()</h2>
@@ -190,7 +193,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00046">46</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00052">52</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 
 </div>
 </div>
@@ -270,7 +273,7 @@ Properties</h2></td></tr>
 
 <p>Ticks the OnTick method and returns its status. </p>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00056">56</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00063">63</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 
 </div>
 </div>
@@ -297,7 +300,33 @@ Properties</h2></td></tr>
 
 <p>Returns the behavior tree's blackboard. </p>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00025">25</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00031">31</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5914ac0662ca9b89caf58baec683ec25" name="a5914ac0662ca9b89caf58baec683ec25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5914ac0662ca9b89caf58baec683ec25">&#9670;&nbsp;</a></span>IsInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MPewsey.BehaviorTree.Subnodes.BehaviorSubnode.IsInitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if the subnode has been initialized. </p>
+
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00026">26</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 
 </div>
 </div>
@@ -323,7 +352,7 @@ Properties</h2></td></tr>
 
 <p>The parent node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00020">20</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00021">21</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 
 </div>
 </div>
@@ -349,7 +378,7 @@ Properties</h2></td></tr>
 
 <p>The behavior tree, or root of the tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00015">15</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_behavior_subnode_8cs_source.html#l00016">16</a> of file <a class="el" href="_behavior_subnode_8cs_source.html">BehaviorSubnode.cs</a>.</p>
 
 </div>
 </div>

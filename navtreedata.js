@@ -53,7 +53,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_behavior_node_8cs_source.html"
+"_behavior_node_8cs_source.html",
+"namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

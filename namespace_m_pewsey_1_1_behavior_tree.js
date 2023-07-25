@@ -1,6 +1,7 @@
 var namespace_m_pewsey_1_1_behavior_tree =
 [
     [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor" ],
+    [ "Exceptions", "namespace_m_pewsey_1_1_behavior_tree_1_1_exceptions.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_exceptions" ],
     [ "Nodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes" ],
     [ "Subnodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes.html", "namespace_m_pewsey_1_1_behavior_tree_1_1_subnodes" ],
     [ "BehaviourTree", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree.html", "class_m_pewsey_1_1_behavior_tree_1_1_behaviour_tree" ],
@@ -9,8 +10,7 @@ var namespace_m_pewsey_1_1_behavior_tree =
     [ "Comparison", "class_m_pewsey_1_1_behavior_tree_1_1_comparison.html", "class_m_pewsey_1_1_behavior_tree_1_1_comparison" ],
     [ "BehaviorStatus", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692b", [
       [ "Failure", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692bae139a585510a502bbf1841cf589f5086", null ],
-      [ "Success", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692ba505a83f220c02df2f85c3810cd9ceb38", null ],
-      [ "Running", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692ba5bda814c4aedb126839228f1a3d92f09", null ]
+      [ "Success", "namespace_m_pewsey_1_1_behavior_tree.html#a79e90ba78972959fc7457eaa83aa692ba505a83f220c02df2f85c3810cd9ceb38", null ]
     ] ],
     [ "ComparisonType", "namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2", [
       [ "Equal", "namespace_m_pewsey_1_1_behavior_tree.html#af430157fd4356c27b3371605d4fcd3b2af5f286e73bda105e538310b3190f75c5", null ],

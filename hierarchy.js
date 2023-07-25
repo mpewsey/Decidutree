@@ -18,6 +18,9 @@ var hierarchy =
       [ "MPewsey.BehaviorTree.Nodes.Editor.SelectorNodeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html", null ],
       [ "MPewsey.BehaviorTree.Nodes.Editor.SequenceNodeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_sequence_node_editor.html", null ]
     ] ],
+    [ "System.Exception", null, [
+      [ "MPewsey.BehaviorTree.Exceptions.NodeNotInitializedException", "class_m_pewsey_1_1_behavior_tree_1_1_exceptions_1_1_node_not_initialized_exception.html", null ]
+    ] ],
     [ "MonoBehaviour", null, [
       [ "MPewsey.BehaviorTree.Nodes.BehaviorNode", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_behavior_node.html", [
         [ "MPewsey.BehaviorTree.Nodes.SelectorNode", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html", [

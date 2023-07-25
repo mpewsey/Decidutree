@@ -5,6 +5,9 @@ var annotated_dup =
         [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_editor.html", [
           [ "BehaviourTreeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behaviour_tree_editor.html", "class_m_pewsey_1_1_behavior_tree_1_1_editor_1_1_behaviour_tree_editor" ]
         ] ],
+        [ "Exceptions", "namespace_m_pewsey_1_1_behavior_tree_1_1_exceptions.html", [
+          [ "NodeNotInitializedException", "class_m_pewsey_1_1_behavior_tree_1_1_exceptions_1_1_node_not_initialized_exception.html", null ]
+        ] ],
         [ "Nodes", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes.html", [
           [ "Editor", "namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html", [
             [ "RandomSelectorNodeEditor", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_random_selector_node_editor.html", "class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_random_selector_node_editor" ],
