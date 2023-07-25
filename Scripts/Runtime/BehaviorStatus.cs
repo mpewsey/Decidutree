@@ -7,6 +7,6 @@ namespace MPewsey.BehaviorTree
     {
         Failure,
         Success,
-        Running,
+        // Running,
     }
 }

@@ -1,3 +1,4 @@
+using MPewsey.BehaviorTree.Exceptions;
 using MPewsey.BehaviorTree.Nodes;
 using UnityEngine;
 
@@ -18,6 +19,11 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// The parent node.
         /// </summary>
         public BehaviorNode Parent { get; private set; }
+
+        /// <summary>
+        /// True if the subnode has been initialized.
+        /// </summary>
+        public bool IsInitialized { get; private set; }
 
         /// <summary>
         /// Returns the behavior tree's blackboard.
@@ -45,6 +51,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// <param name="parent">The parent node.</param>
         public void Initialize(BehaviourTree root, BehaviorNode parent)
         {
+            IsInitialized = true;
             Root = root;
             Parent = parent;
             OnInitialize();
@@ -55,6 +62,9 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// </summary>
         public BehaviorStatus Tick()
         {
+            if (!IsInitialized)
+                throw new NodeNotInitializedException($"Behaviour subnode has not been initialized: {this}.");
+
             return OnTick();
         }
     }
