@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Nodes
+namespace MPewsey.Decidutree.Nodes
 {
     /// <summary>
     /// A selector node that operates on child nodes in a random order.

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Subnodes
+namespace MPewsey.Decidutree.Subnodes
 {
     /// <summary>
     /// Increments the specified blackboard entry.

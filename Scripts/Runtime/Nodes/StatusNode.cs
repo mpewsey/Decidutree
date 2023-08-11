@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Nodes
+namespace MPewsey.Decidutree.Nodes
 {
     /// <summary>
     /// A behavior node that returns a specified status.

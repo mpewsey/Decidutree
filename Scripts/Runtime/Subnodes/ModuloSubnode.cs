@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Subnodes
+namespace MPewsey.Decidutree.Subnodes
 {
     /// <summary>
     /// Compares the modulo of the blackboard value to a specified value.

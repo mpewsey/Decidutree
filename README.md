@@ -1,4 +1,4 @@
-# Behavior Tree
+# Decidutree
 
 A component based behavior tree for Unity.
 
@@ -11,13 +11,13 @@ To add the package to a project, in Unity, select `Window > Package Manager`.
 Select `Add package from git URL...` and paste the following URL:
 
 ```
-https://github.com/mpewsey/BehaviorTree.git
+https://github.com/mpewsey/Decidutree.git
 ```
 
 RECOMMENDED: To lock into a specific version, append `#{VERSION_TAG}` to the end of the URL. For example:
 
 ```
-https://github.com/mpewsey/BehaviorTree.git#v1.0.0
+https://github.com/mpewsey/Decidutree.git#v1.0.0
 ```
 
 ## Usage

@@ -1,16 +1,16 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Nodes.Tests.PlayMode
+namespace MPewsey.Decidutree.Nodes.Tests.PlayMode
 {
     public class TestSelectorNode
     {
-        private BehaviourTree Tree { get; set; }
+        private BehaviorTree Tree { get; set; }
 
         [SetUp]
         public void SetUp()
         {
-            Tree = new GameObject("Behavior Tree").AddComponent<BehaviourTree>();
+            Tree = new GameObject("Behavior Tree").AddComponent<BehaviorTree>();
         }
 
         [TearDown]

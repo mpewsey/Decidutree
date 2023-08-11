@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Subnodes
+namespace MPewsey.Decidutree.Subnodes
 {
     /// <summary>
     /// A subnode that returns success with a specified probability.

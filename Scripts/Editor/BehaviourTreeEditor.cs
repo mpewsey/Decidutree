@@ -1,12 +1,12 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Editor
+namespace MPewsey.Decidutree.Editor
 {
     /// <summary>
     /// The behavior tree custom editor.
     /// </summary>
-    [CustomEditor(typeof(BehaviourTree))]
+    [CustomEditor(typeof(BehaviorTree))]
     public class BehaviourTreeEditor : UnityEditor.Editor
     {
         /// <summary>
@@ -16,7 +16,7 @@ namespace MPewsey.BehaviorTree.Editor
         public static void CreateBehaviorTree()
         {
             var obj = new GameObject("Behavior Tree");
-            obj.AddComponent<BehaviourTree>();
+            obj.AddComponent<BehaviorTree>();
             obj.transform.SetParent(Selection.activeTransform);
         }
     }

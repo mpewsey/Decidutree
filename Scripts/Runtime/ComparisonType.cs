@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree
+namespace MPewsey.Decidutree
 {
     /// <summary>
     /// The comparison operator type.

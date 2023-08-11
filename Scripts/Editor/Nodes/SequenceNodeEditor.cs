@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Nodes.Editor
+namespace MPewsey.Decidutree.Nodes.Editor
 {
     /// <summary>
     /// The sequence node custom editor.

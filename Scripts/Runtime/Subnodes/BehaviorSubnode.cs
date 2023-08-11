@@ -1,8 +1,8 @@
-using MPewsey.BehaviorTree.Exceptions;
-using MPewsey.BehaviorTree.Nodes;
+using MPewsey.Decidutree.Exceptions;
+using MPewsey.Decidutree.Nodes;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Subnodes
+namespace MPewsey.Decidutree.Subnodes
 {
     /// <summary>
     /// The base class for all behavior subnodes.
@@ -13,7 +13,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// <summary>
         /// The behavior tree, or root of the tree.
         /// </summary>
-        public BehaviourTree Root { get; private set; }
+        public BehaviorTree Root { get; private set; }
 
         /// <summary>
         /// The parent node.
@@ -49,7 +49,7 @@ namespace MPewsey.BehaviorTree.Subnodes
         /// </summary>
         /// <param name="root">The behavior tree, or root node.</param>
         /// <param name="parent">The parent node.</param>
-        public void Initialize(BehaviourTree root, BehaviorNode parent)
+        public void Initialize(BehaviorTree root, BehaviorNode parent)
         {
             IsInitialized = true;
             Root = root;

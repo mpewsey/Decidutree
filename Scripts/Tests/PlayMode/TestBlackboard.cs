@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace MPewsey.BehaviorTree.Tests.PlayMode
+namespace MPewsey.Decidutree.Tests.PlayMode
 {
     public class TestBlackboard
     {

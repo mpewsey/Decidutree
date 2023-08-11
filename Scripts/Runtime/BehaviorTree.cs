@@ -1,14 +1,14 @@
-using MPewsey.BehaviorTree.Nodes;
+using MPewsey.Decidutree.Nodes;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.Decidutree
 {
     /// <summary>
     /// A behavior tree component.
     /// 
     /// When ticked, the tree evaluates in the same manner as a SelectorNode.
     /// </summary>
-    public class BehaviourTree : SelectorNode
+    public class BehaviorTree : SelectorNode
     {
         [SerializeField] private InitializeMode _initializeMode = InitializeMode.Manual;
         /// <summary>

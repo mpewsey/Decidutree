@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.Decidutree
 {
     /// <summary>
     /// Contains methods for comparing objects.

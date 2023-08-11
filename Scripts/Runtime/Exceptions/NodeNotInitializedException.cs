@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree.Exceptions
+namespace MPewsey.Decidutree.Exceptions
 {
     /// <summary>
     /// Exception thrown when a behaviour node or subnode is not initialized.

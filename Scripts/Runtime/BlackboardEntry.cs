@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree
+namespace MPewsey.Decidutree
 {
     /// <summary>
     /// A shared variable entry in a Blackboard.

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MPewsey.BehaviorTree
+namespace MPewsey.Decidutree
 {
     /// <summary>
     /// A blackboard, containing shared variable entries for a behavior tree instance.

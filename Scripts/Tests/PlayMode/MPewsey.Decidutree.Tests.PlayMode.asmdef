@@ -1,10 +1,10 @@
 {
-    "name": "MPewsey.BehaviorTree.Tests.PlayMode",
+    "name": "MPewsey.Decidutree.Tests.PlayMode",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "MPewsey.BehaviorTree"
+        "MPewsey.Decidutree"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

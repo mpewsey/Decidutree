@@ -1,4 +1,4 @@
-namespace MPewsey.BehaviorTree.Nodes
+namespace MPewsey.Decidutree.Nodes
 {
     /// <summary>
     /// Ticks the node's children until the first Failure or Running node is found.

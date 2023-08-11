@@ -1,18 +1,18 @@
-using MPewsey.BehaviorTree.Nodes;
-using MPewsey.BehaviorTree.Subnodes;
+using MPewsey.Decidutree.Nodes;
+using MPewsey.Decidutree.Subnodes;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace MPewsey.BehaviorTree.Tests.PlayMode
+namespace MPewsey.Decidutree.Tests.PlayMode
 {
-    public class TestBehaviourTree
+    public class TestBehaviorTree
     {
-        private BehaviourTree Tree { get; set; }
+        private BehaviorTree Tree { get; set; }
 
         [SetUp]
         public void SetUp()
         {
-            Tree = new GameObject("Behavior Tree").AddComponent<BehaviourTree>();
+            Tree = new GameObject("Behavior Tree").AddComponent<BehaviorTree>();
         }
 
         [TearDown]
