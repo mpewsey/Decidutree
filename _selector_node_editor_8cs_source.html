@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Behavior Tree: /github/workspace/Scripts/Editor/Nodes/SelectorNodeEditor.cs Source File</title>
+<title>Decidutree: /github/workspace/Scripts/Editor/Nodes/SelectorNodeEditor.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Behavior Tree
+   <div id="projectname">Decidutree
    </div>
    <div id="projectbrief">A component based behavior tree for Unity.</div>
   </td>
@@ -102,24 +102,24 @@ $(document).ready(function(){initNavTree('_selector_node_editor_8cs_source.html'
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> UnityEditor;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html">MPewsey.BehaviorTree.Nodes.Editor</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor.html">MPewsey.Decidutree.Nodes.Editor</a></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    [CustomEditor(typeof(SelectorNode))]</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">SelectorNodeEditor</a> : UnityEditor.Editor</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">SelectorNodeEditor</a> : UnityEditor.Editor</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        [MenuItem(<span class="stringliteral">&quot;GameObject/Behavior Tree/Selector Node&quot;</span>, priority = 20)]</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#abcee9278ec03c0a0f6a4ebb39bfb55d1">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#abcee9278ec03c0a0f6a4ebb39bfb55d1">CreateSelectorNode</a>()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#a05ab9307c60eb43cd06ea7ef510cff74">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#a05ab9307c60eb43cd06ea7ef510cff74">CreateSelectorNode</a>()</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            var obj = <span class="keyword">new</span> GameObject(<span class="stringliteral">&quot;Selector Node&quot;</span>);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            obj.AddComponent&lt;<a class="code hl_class" href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html">SelectorNode</a>&gt;();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            obj.AddComponent&lt;<a class="code hl_class" href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_selector_node.html">SelectorNode</a>&gt;();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            obj.transform.SetParent(Selection.activeTransform);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">MPewsey.BehaviorTree.Nodes.Editor.SelectorNodeEditor</a></div><div class="ttdoc">The selector node custom editor.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_editor_8cs_source.html#l00010">SelectorNodeEditor.cs:11</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor_html_abcee9278ec03c0a0f6a4ebb39bfb55d1"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#abcee9278ec03c0a0f6a4ebb39bfb55d1">MPewsey.BehaviorTree.Nodes.Editor.SelectorNodeEditor.CreateSelectorNode</a></div><div class="ttdeci">static void CreateSelectorNode()</div><div class="ttdoc">Creates a new selector node.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_editor_8cs_source.html#l00016">SelectorNodeEditor.cs:16</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node_html"><div class="ttname"><a href="class_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_selector_node.html">MPewsey.BehaviorTree.Nodes.SelectorNode</a></div><div class="ttdoc">Ticks the node's children until the first Success or Running node is found.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_8cs_source.html#l00006">SelectorNode.cs:7</a></div></div>
-<div class="ttc" id="anamespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html">MPewsey.BehaviorTree.Nodes.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_selector_node_editor_8cs_source.html#l00004">RandomSelectorNodeEditor.cs:5</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor_html"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html">MPewsey.Decidutree.Nodes.Editor.SelectorNodeEditor</a></div><div class="ttdoc">The selector node custom editor.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_editor_8cs_source.html#l00010">SelectorNodeEditor.cs:11</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor_html_a05ab9307c60eb43cd06ea7ef510cff74"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html#a05ab9307c60eb43cd06ea7ef510cff74">MPewsey.Decidutree.Nodes.Editor.SelectorNodeEditor.CreateSelectorNode</a></div><div class="ttdeci">static void CreateSelectorNode()</div><div class="ttdoc">Creates a new selector node.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_editor_8cs_source.html#l00016">SelectorNodeEditor.cs:16</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_nodes_1_1_selector_node_html"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_selector_node.html">MPewsey.Decidutree.Nodes.SelectorNode</a></div><div class="ttdoc">Ticks the node's children until the first Success or Running node is found.</div><div class="ttdef"><b>Definition:</b> <a href="_selector_node_8cs_source.html#l00006">SelectorNode.cs:7</a></div></div>
+<div class="ttc" id="anamespace_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor.html">MPewsey.Decidutree.Nodes.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_selector_node_editor_8cs_source.html#l00004">RandomSelectorNodeEditor.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

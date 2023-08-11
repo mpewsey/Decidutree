@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Behavior Tree", "index.html", [
+  [ "Decidutree", "index.html", [
     [ "Installation", "index.html#autotoc_md1", null ],
     [ "Usage", "index.html#autotoc_md2", null ],
     [ "Creating Custom Behavior", "index.html#autotoc_md3", null ],
@@ -54,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_behavior_node_8cs_source.html",
-"namespace_m_pewsey_1_1_behavior_tree_1_1_nodes_1_1_editor.html"
+"namespace_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

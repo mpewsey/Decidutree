@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['behavior_20tree_0',['Behavior Tree',['../index.html',1,'']]]
+  ['decidutree_0',['Decidutree',['../index.html',1,'']]]
 ];

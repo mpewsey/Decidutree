@@ -1,4 +1,4 @@
 var namespace_m_pewsey =
 [
-    [ "BehaviorTree", "namespace_m_pewsey_1_1_behavior_tree.html", "namespace_m_pewsey_1_1_behavior_tree" ]
+    [ "Decidutree", "namespace_m_pewsey_1_1_decidutree.html", "namespace_m_pewsey_1_1_decidutree" ]
 ];
