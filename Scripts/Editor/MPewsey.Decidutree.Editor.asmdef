@@ -1,5 +1,5 @@
 {
-    "name": "MPewsey.BehaviorTree.Editor",
+    "name": "MPewsey.Decidutree.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:0760161266623714bb68e382de5997d1"

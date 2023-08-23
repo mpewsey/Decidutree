@@ -7,7 +7,7 @@ namespace MPewsey.Decidutree.Editor
     /// The behavior tree custom editor.
     /// </summary>
     [CustomEditor(typeof(BehaviorTree))]
-    public class BehaviourTreeEditor : UnityEditor.Editor
+    public class BehaviorTreeEditor : UnityEditor.Editor
     {
         /// <summary>
         /// Creates a new behavior tree.
