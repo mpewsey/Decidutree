@@ -13,7 +13,7 @@ var hierarchy =
       [ "MPewsey.Decidutree.Subnodes.ComparisonSubnodeInt", "class_m_pewsey_1_1_decidutree_1_1_subnodes_1_1_comparison_subnode_int.html", null ]
     ] ],
     [ "UnityEditor.Editor", null, [
-      [ "MPewsey.Decidutree.Editor.BehaviourTreeEditor", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html", null ],
+      [ "MPewsey.Decidutree.Editor.BehaviorTreeEditor", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html", null ],
       [ "MPewsey.Decidutree.Nodes.Editor.RandomSelectorNodeEditor", "class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_random_selector_node_editor.html", null ],
       [ "MPewsey.Decidutree.Nodes.Editor.SelectorNodeEditor", "class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_selector_node_editor.html", null ],
       [ "MPewsey.Decidutree.Nodes.Editor.SequenceNodeEditor", "class_m_pewsey_1_1_decidutree_1_1_nodes_1_1_editor_1_1_sequence_node_editor.html", null ]

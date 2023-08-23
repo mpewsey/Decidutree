@@ -3,7 +3,7 @@ var annotated_dup =
     [ "MPewsey", "namespace_m_pewsey.html", [
       [ "Decidutree", "namespace_m_pewsey_1_1_decidutree.html", [
         [ "Editor", "namespace_m_pewsey_1_1_decidutree_1_1_editor.html", [
-          [ "BehaviourTreeEditor", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor" ]
+          [ "BehaviorTreeEditor", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html", "class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor" ]
         ] ],
         [ "Exceptions", "namespace_m_pewsey_1_1_decidutree_1_1_exceptions.html", [
           [ "NodeNotInitializedException", "class_m_pewsey_1_1_decidutree_1_1_exceptions_1_1_node_not_initialized_exception.html", null ]

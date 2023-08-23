@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Decidutree: /github/workspace/Scripts/Editor/BehaviourTreeEditor.cs Source File</title>
+<title>Decidutree: /github/workspace/Scripts/Editor/BehaviorTreeEditor.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('_behaviour_tree_editor_8cs_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_behavior_tree_editor_8cs_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('_behaviour_tree_editor_8cs_source.html
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">BehaviourTreeEditor.cs</div></div>
+  <div class="headertitle"><div class="title">BehaviorTreeEditor.cs</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> UnityEditor;</div>
@@ -105,10 +105,10 @@ $(document).ready(function(){initNavTree('_behaviour_tree_editor_8cs_source.html
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespace_m_pewsey.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_m_pewsey_1_1_decidutree_1_1_editor.html">MPewsey.Decidutree.Editor</a></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    [CustomEditor(typeof(BehaviorTree))]</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html">BehaviourTreeEditor</a> : UnityEditor.Editor</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html">BehaviorTreeEditor</a> : UnityEditor.Editor</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        [MenuItem(<span class="stringliteral">&quot;GameObject/Behavior Tree/Behavior Tree&quot;</span>, priority = 20)]</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html#ab1b85be73b26fe1acb1987e7613af5e2">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html#ab1b85be73b26fe1acb1987e7613af5e2">CreateBehaviorTree</a>()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html#ad549425293b783dfca7dcb0fe76fdad6">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html#ad549425293b783dfca7dcb0fe76fdad6">CreateBehaviorTree</a>()</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            var obj = <span class="keyword">new</span> GameObject(<span class="stringliteral">&quot;Behavior Tree&quot;</span>);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            obj.AddComponent&lt;<a class="code hl_class" href="class_m_pewsey_1_1_decidutree_1_1_behavior_tree.html">BehaviorTree</a>&gt;();</div>
@@ -117,15 +117,15 @@ $(document).ready(function(){initNavTree('_behaviour_tree_editor_8cs_source.html
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 <div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_behavior_tree_html"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_behavior_tree.html">MPewsey.Decidutree.BehaviorTree</a></div><div class="ttdoc">A behavior tree component.</div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_8cs_source.html#l00011">BehaviorTree.cs:12</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor_html"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html">MPewsey.Decidutree.Editor.BehaviourTreeEditor</a></div><div class="ttdoc">The behavior tree custom editor.</div><div class="ttdef"><b>Definition:</b> <a href="_behaviour_tree_editor_8cs_source.html#l00010">BehaviourTreeEditor.cs:11</a></div></div>
-<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor_html_ab1b85be73b26fe1acb1987e7613af5e2"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behaviour_tree_editor.html#ab1b85be73b26fe1acb1987e7613af5e2">MPewsey.Decidutree.Editor.BehaviourTreeEditor.CreateBehaviorTree</a></div><div class="ttdeci">static void CreateBehaviorTree()</div><div class="ttdoc">Creates a new behavior tree.</div><div class="ttdef"><b>Definition:</b> <a href="_behaviour_tree_editor_8cs_source.html#l00016">BehaviourTreeEditor.cs:16</a></div></div>
-<div class="ttc" id="anamespace_m_pewsey_1_1_decidutree_1_1_editor_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_decidutree_1_1_editor.html">MPewsey.Decidutree.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_behaviour_tree_editor_8cs_source.html#l00004">BehaviourTreeEditor.cs:5</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor_html"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html">MPewsey.Decidutree.Editor.BehaviorTreeEditor</a></div><div class="ttdoc">The behavior tree custom editor.</div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_editor_8cs_source.html#l00010">BehaviorTreeEditor.cs:11</a></div></div>
+<div class="ttc" id="aclass_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor_html_ad549425293b783dfca7dcb0fe76fdad6"><div class="ttname"><a href="class_m_pewsey_1_1_decidutree_1_1_editor_1_1_behavior_tree_editor.html#ad549425293b783dfca7dcb0fe76fdad6">MPewsey.Decidutree.Editor.BehaviorTreeEditor.CreateBehaviorTree</a></div><div class="ttdeci">static void CreateBehaviorTree()</div><div class="ttdoc">Creates a new behavior tree.</div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_editor_8cs_source.html#l00016">BehaviorTreeEditor.cs:16</a></div></div>
+<div class="ttc" id="anamespace_m_pewsey_1_1_decidutree_1_1_editor_html"><div class="ttname"><a href="namespace_m_pewsey_1_1_decidutree_1_1_editor.html">MPewsey.Decidutree.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_behavior_tree_editor_8cs_source.html#l00004">BehaviorTreeEditor.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4edcbb236dfd51dd81727243a38df6a0.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_1f54c2afe23a8c3b35a56cf36ba51bdc.html">Editor</a></li><li class="navelem"><b>BehaviourTreeEditor.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_4edcbb236dfd51dd81727243a38df6a0.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_1f54c2afe23a8c3b35a56cf36ba51bdc.html">Editor</a></li><li class="navelem"><b>BehaviorTreeEditor.cs</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
